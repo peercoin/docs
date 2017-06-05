@@ -2,6 +2,17 @@
   <Topbar ref:topbar on:mobilemenu="handleMobileMenu(event)" on:fontsize="handleFontSize(event)" />
   <Menu ref:menu on:mobilemenu="handleMobileMenu(event)" />
 
+  <div class="welcome-card">
+    <div class="logo">
+      <img src="img/logo-leaf.svg" alt="PeerAssets">
+    </div>
+    <div class="content">
+      <h1>Peercoin Docs</h1>
+      <h2>Learn more about Peercoin and the technologies (PoS, PeerAssets, minting, etc) that make it be this resilient coin.</h2>
+      <h3>Build by Dev Team and Community, last update: April 2017.</h3>
+    </div>
+  </div>
+
   <div class="doc-container font-{{fontSize}}" ref:docContainer>
     {{{ documentationHTML }}}
   </div>

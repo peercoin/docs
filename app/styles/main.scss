@@ -10,6 +10,7 @@ html, body {
   padding: 0;
   font-size: 10px;
   font-family: $app-font;
+  word-break: break-word;
 }
 
 body {
@@ -20,5 +21,68 @@ body {
 
   @include viewports(up-to small) {
     padding-left: 0;
+  }
+}
+
+.welcome-card {
+  background: url(img/logo-faded.svg) no-repeat right -15px bottom -15px, $color-neutral;
+  background-size: 102px auto, 100% 100%;
+  margin: 2rem;
+  border-radius: 6px;
+  min-height: 119px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  .logo {
+    width: 60px;
+    margin: 2rem;
+
+    @include viewports(up-to small) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    flex: 1;
+    border-left: 2px solid rgba(#fff, 0.2);
+    padding: 0 2rem;
+
+    @include viewports(up-to small) {
+      border-left: none;
+      padding: 1rem;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-top: -0.5rem;
+      color: $color-primary;
+    }
+
+    h2 {
+      margin-top: 0.5rem;
+      font-size: 1.6rem;
+
+      @include viewports(up-to small) {
+        margin: 0.5rem 0 1rem 0;
+        font-weight: normal;
+      }
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      opacity: 0.5;
+      margin-top: 0.5rem;
+    }
   }
 }

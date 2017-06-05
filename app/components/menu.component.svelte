@@ -1,7 +1,7 @@
 <div>
   <div class="MenuComp--overlay {{(isOpen) ? 'active' : ''}}" ref:overlay on:click="fire('mobilemenu', {action: 'CLOSE'})"></div>
   <div class="MenuComp {{(isOpen) ? 'open' : ''}}" ref:menu>
-    <div class="logo">
+    <div class="logo" on:click="scrollTop()">
       <img src="img/logo.svg" alt="PeerAssets WhitePaper">
     </div>
     <ul class="menu">
@@ -29,8 +29,10 @@
     },
 
     methods: {
+      scrollTop() {
+        window.scrollTo(0, 0);
+      },
       toggle () {
-        console.log(this);
         this.set({isOpen: !this.refs.menu.isOpen});
         return this.refs.menu.isOpen;
       },
@@ -97,7 +99,8 @@
         let menuItems = this.get('menuItems');
         let top = window.scrollY + document.getElementById(item.id).getBoundingClientRect().top - 70;
         window.scrollTo(0, top);
-        //this.close();
+
+        this.fire('mobilemenu', {action: 'CLOSE'});
 
         this.removeActiveState();
         menuItems.map(loopItem => {
