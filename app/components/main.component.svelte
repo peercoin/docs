@@ -112,16 +112,35 @@
         let docElements = this.refs.docContainer;
         let headingItems = docElements.querySelectorAll('h1, h2');
         let menuItems = [];
+        let menuItemsFlat = [];
+        let currH1;
 
         headingItems.forEach((item) => {
-          menuItems.push({
+          menuItemsFlat.push({
             type: item.nodeName.toLowerCase(),
             label: item.textContent,
             id: item.id
           });
+
+          if (item.nodeName.toLowerCase() === 'h1') {
+            menuItems.push({
+              type: item.nodeName.toLowerCase(),
+              label: item.textContent,
+              id: item.id
+            });
+            currH1 = menuItems[menuItems.length - 1];
+            currH1.children = [];
+            return;
+          } else if (item.nodeName.toLowerCase() === 'h2') {
+            currH1.children.push({
+              type: item.nodeName.toLowerCase(),
+              label: item.textContent,
+              id: item.id
+            });
+          }
         });
 
-        return menuItems;
+        return {menuItems: menuItems, menuItemsFlat: menuItemsFlat};
       }
     }
   }
