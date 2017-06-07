@@ -35,10 +35,8 @@
       startMenu (menuOpts) {
         this.set(menuOpts);
         setTimeout(() => {
+          this.handleActivatedMenuOnScroll();
           this.scrollToURLMenu();
-          setTimeout(() => {
-            this.handleActivatedMenuOnScroll();
-          }, 10);
         }, 10);
       },
       scrollTop() {
@@ -46,8 +44,7 @@
       },
       scrollToURLMenu () {
         let hash = window.location.hash.substr(2);
-        let items = this.get('menuItemsFlat');
-        let filtered = items.filter(item => item.id === hash);
+        let filtered = this.get('menuItemsFlat').filter(item => item.id === hash);
 
         if (filtered) {
           let heading = document.getElementById(filtered[0].id);
@@ -101,7 +98,11 @@
 
             if (currTop > window.scrollY) {
               this.removeActiveState();
-              menuItems[i-1].active = true;
+              if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                menuItems[menuItems.length-1].active = true;
+              } else {
+                menuItems[i-1].active = true;
+              }
               stop = true;
             } else {
               item.active = false;
@@ -124,16 +125,16 @@
         let top = window.scrollY + document.getElementById(item.id).getBoundingClientRect().top - 70;
         window.scrollTo(0, top);
 
-        this.fire('mobilemenu', {action: 'CLOSE'});
-
+        // If reached bottom
         this.removeActiveState();
-        menuItems.map(loopItem => {
-          if(loopItem == item) {
-            loopItem.active = true;
-          }
-          return loopItem;
-        });
+          menuItems.map(loopItem => {
+            if(loopItem == item) {
+              loopItem.active = true;
+            }
+            return loopItem;
+          });   
 
+        this.fire('mobilemenu', {action: 'CLOSE'});
         this.set({menuItemsFlat: menuItems});
       }
     }
