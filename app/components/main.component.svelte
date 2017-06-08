@@ -24,7 +24,7 @@
   import Topbar from './topbar.component';
   import marked from 'marked';
   import ajax from '@fdaciuk/ajax';
-  import Prism from 'prismjs';
+  //import Prism from 'prismjs';
 
   export default {
     oncreate () {
@@ -105,7 +105,7 @@
           this.refs.menu.startMenu(this.generateMenu());
 
           // Highlight code
-          Prism.highlightAll();
+          //Prism.highlightAll();
         });
       },
       generateMenu () {

@@ -81,6 +81,20 @@
         padding: 1rem 2rem;
       }
 
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .subsection {
+        display: none;
+
+        &.show {
+          display: block;
+        }
+      }
+
       a {
         display: block;
         padding: 0.8rem 2rem;
@@ -94,15 +108,16 @@
         //height: 33px;
         overflow: hidden;
 
-        &:hover {
-          background: rgba(#fff, 0.1);
-          color: #fff;
+        a {
+          &:hover {
+            background: rgba(#fff, 0.1);
+            color: #fff;
+          }
         }
       }
 
       &.h2 {
-        font-size: 1.3rem;
-        padding-left: 1rem;
+        font-size: 1.3rem;  
         color: rgba(#fff, 0.5);
         background: rgba(#fff, 0.05);
 
@@ -110,9 +125,13 @@
           font-size: 1.4rem;
         }
 
-        &:hover {
-          background: rgba(#fff, 0.2);
-          color: #fff;
+        a {
+          padding-left: 3rem;
+
+          &:hover {
+            background: rgba(#fff, 0.2);
+            color: #fff;
+          }
         }
       }
 

@@ -5,9 +5,18 @@
       <img src="img/logo.svg" alt="PeerAssets WhitePaper">
     </div>
     <ul class="menu">
-      {{#each menuItemsFlat as item}}
+      {{#each menuItems as item}}
         <li class="{{(item.active) ? 'active ' : ''}}{{item.type}}">
           <a on:click="scrollToItem(item, event)" href="#{{item.id}}">{{item.label}}</a>
+            {{#if item.children.length > 0}}
+              <ul>
+                {{#each item.children as subitem}}
+                  <li class="{{(subitem.active) ? 'active ' : ''}}{{subitem.type}}">
+                    <a on:click="scrollToItem(subitem, event)" href="#{{subitem.id}}">{{subitem.label}}</a>
+                  </li>
+                {{/each}}
+              </ul>
+            {{/if}}
         </li>
       {{/each}}
     </ul>
@@ -57,12 +66,13 @@
         return this.refs.menu.isOpen;
       },
       close () {
-        console.log('close');
         this.set({isOpen: false});
       },
       open () {
-        console.log('open');
         this.set({isOpen: true});
+      },
+      handleSubSections () {
+        //let currentActive = document.querySelector('.active ~');
       },
       activeClass (active) {
         if(active === true) {
