@@ -8,7 +8,7 @@ There are two ways to contribute to Peercoin Docs: Directly via Github website, 
 
 #### Directly via Github:
 
-1. Edit any of the docs files;
+1. Edit any of the [docs files](https://github.com/peercoin/docs/tree/master/app/assets/docs);
 2. Submit a Pull Request with your changes.
 
 #### Developing locally:
