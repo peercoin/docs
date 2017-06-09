@@ -13,7 +13,7 @@ There are two ways to contribute to Peercoin Docs: Directly via Github website, 
 
 #### Developing locally:
 
-Make sure you have Node.js installed, if not, follow this guide.
+Make sure you have Node.js installed, if not, [**follow this guide**](https://gist.github.com/kazzkiq/fe702215173e795d49d0c1ffbea363b5).
 
 1. Clone this repo: `git clone https://github.com/peercoin/docs.git`;
 2. Inside the cloned folder, run: `npm i -g brunch && npm i`; (skip the first command if you already have `brunch` installed);
