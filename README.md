@@ -24,8 +24,6 @@ Any changes in the project (both on docs and/or code) will be reflect automatica
 
 #### Deploying a public test version:
 
-> This is still in progress.
-
 1. In your local project, run: `npm run deploy`.
 2. Access your changes at: https://peercoin.github.io/docs/
 
