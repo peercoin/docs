@@ -136,10 +136,12 @@
       }
 
       &.active {
-        background: $color-primary !important;
-        height: auto;
-        font-weight: bold;
-        color: rgba(#fff, 0.7);
+        > a {
+          background: $color-primary !important;
+          height: auto;
+          font-weight: bold;
+          color: rgba(#fff, 0.7);
+        }
       }
     }
   }

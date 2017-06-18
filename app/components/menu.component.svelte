@@ -1,3 +1,4 @@
+<:Window on:scroll="onAppScroll(this.scrollY)" />
 <div>
   <div class="MenuComp--overlay {{(isOpen) ? 'active' : ''}}" ref:overlay on:click="fire('mobilemenu', {action: 'CLOSE'})"></div>
   <div class="MenuComp {{(isOpen) ? 'open' : ''}}" ref:menu>
@@ -6,12 +7,12 @@
     </div>
     <ul class="menu">
       {{#each menuItems as item}}
-        <li class="{{(item.active) ? 'active ' : ''}}{{item.type}}">
+        <li id="menu-{{item.id}}" class="{{item.type}}">
           <a on:click="scrollToItem(item, event)" href="#{{item.id}}">{{item.label}}</a>
             {{#if item.children.length > 0}}
-              <ul>
+              <ul class="subsection show">
                 {{#each item.children as subitem}}
-                  <li class="{{(subitem.active) ? 'active ' : ''}}{{subitem.type}}">
+                  <li id="menu-{{subitem.id}}" class="{{subitem.type}}">
                     <a on:click="scrollToItem(subitem, event)" href="#{{subitem.id}}">{{subitem.label}}</a>
                   </li>
                 {{/each}}
@@ -41,10 +42,47 @@
     },
 
     methods: {
+      onAppScroll (y) {
+        let menuItems = this.get('menuItemsFlat');
+        
+        for(let [key, item] of menuItems.entries()) {
+          let el = document.getElementById(item.id);
+          let elemTop = el.getBoundingClientRect().top;
+          let elemBottom = el.getBoundingClientRect().bottom;
+
+          // Is on screen
+          if ((elemTop >= 0) && (elemBottom <= window.innerHeight)) {
+            // Remove active from all menu items
+            [...document.querySelectorAll('.menu li.active')].map(i => i.classList.remove('active'));
+
+            // Get item to highlight
+            let menuToHighlight = document.getElementById(`menu-${item.id}`);
+            
+            // Highlight item
+            menuToHighlight.classList.add('active');
+
+            let sectionToShow = menuToHighlight.parentNode;
+
+            // If its an item inside subsection, make subsection (father) visible
+            if(sectionToShow.classList.contains('subsection')) {
+              [...document.querySelectorAll('.menu .subsection')].map(i => i.classList.remove('show'));
+              sectionToShow.classList.add('show');
+            }
+
+            // If its an item father of a subsection, make subsection (child) visible
+            if(menuToHighlight.querySelectorAll('.subsection').length > 0) {
+              [...document.querySelectorAll('.menu .subsection')].map(i => i.classList.remove('show'));
+              menuToHighlight.querySelector('.subsection').classList.add('show');
+            }
+
+            // Stop loop
+            break;
+          }
+        }
+      },
       startMenu (menuOpts) {
         this.set(menuOpts);
         setTimeout(() => {
-          this.handleActivatedMenuOnScroll();
           this.scrollToURLMenu();
         }, 10);
       },
@@ -71,60 +109,6 @@
       open () {
         this.set({isOpen: true});
       },
-      handleSubSections () {
-        //let currentActive = document.querySelector('.active ~');
-      },
-      activeClass (active) {
-        if(active === true) {
-          return 'active';
-        } else {
-          return '';
-        }
-      },
-      removeActiveState () {
-        let menuItems = this.get('menuItemsFlat').map(item => {
-          item.active = false;
-          return item;
-        });
-        this.set({menuItemsFlat: menuItems});
-      },
-      handleActivatedMenuOnScroll () {
-        let menuItems = this.get('menuItemsFlat');
-
-        window.onscroll = (e) => {
-          let currY = window.scrollY;
-          let stop = false;
-
-          menuItems.forEach((item, i) => {
-            let currTop = window.scrollY + document.getElementById(item.id).getBoundingClientRect().top - 120;
-  
-            if (stop) {
-              return;
-            }
-
-            if (i <= 0) {
-              i = 1;
-            }
-
-            if (currTop > window.scrollY) {
-              this.removeActiveState();
-              if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                menuItems[menuItems.length-1].active = true;
-              } else {
-                menuItems[i-1].active = true;
-              }
-              stop = true;
-            } else {
-              item.active = false;
-            }
-          });
-
-          this.set({
-            menuItemsFlat: menuItems,
-            prevY: currY
-          });
-        }
-      },
       scrollToItem (item, e) {
         if(e) {
           e.preventDefault();
@@ -135,17 +119,7 @@
         let top = window.scrollY + document.getElementById(item.id).getBoundingClientRect().top - 70;
         window.scrollTo(0, top);
 
-        // If reached bottom
-        this.removeActiveState();
-          menuItems.map(loopItem => {
-            if(loopItem == item) {
-              loopItem.active = true;
-            }
-            return loopItem;
-          });   
-
         this.fire('mobilemenu', {action: 'CLOSE'});
-        this.set({menuItemsFlat: menuItems});
       }
     }
   }
