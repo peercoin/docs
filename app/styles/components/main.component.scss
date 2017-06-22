@@ -2,12 +2,13 @@
 @import "../_variables";
 
 .doc-container {
+  display: block;
+}
+
+.doc-container {
   max-width: 1050px;
   margin: 0 auto;
   padding: 2rem;
-}
-
-.doc-container {;
 
   &.font-1 {
     p {
