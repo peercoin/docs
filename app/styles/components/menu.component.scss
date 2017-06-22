@@ -54,11 +54,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 90px;
     cursor: pointer;
     
     img {
-      max-width: 80%;
+      max-width: 188px;
+      margin-left: -5px;
     }
 
     @include viewports(up-to small) {
@@ -108,7 +109,13 @@
         //height: 33px;
         overflow: hidden;
 
-        a {
+        > a {
+          position: relative;
+          background: rgba(#fff, 0.08);
+          border-top: 1px solid rgba(#fff, 0.08);
+          border-bottom: 1px solid rgba(#fff, 0.08);
+          margin-bottom: 1px;
+
           &:hover {
             background: rgba(#fff, 0.1);
             color: #fff;
@@ -126,10 +133,11 @@
         }
 
         a {
+          position: relative;
           padding-left: 3rem;
 
           &:hover {
-            background: rgba(#fff, 0.2);
+            background: rgba(#fff, 0.05);
             color: #fff;
           }
         }
@@ -138,9 +146,28 @@
       &.active {
         > a {
           background: $color-primary !important;
-          height: auto;
           font-weight: bold;
           color: rgba(#fff, 0.7);
+          
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            right: 0px;
+            top: 0;
+            height: 100%;
+            display: block;
+          }
+
+          &:before {
+            right: 4px;
+            width: 1px;
+            background: rgba(#fff, 0.7);
+          }
+
+          &:after {
+            width: 4px;
+            background: rgba(#fff, 0.5);
+          }
         }
       }
     }

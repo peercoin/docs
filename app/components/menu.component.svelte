@@ -10,7 +10,7 @@
         <li id="menu-{{item.id}}" class="{{item.type}}">
           <a on:click="scrollToItem(item, event)" href="#{{item.id}}">{{item.label}}</a>
             {{#if item.children.length > 0}}
-              <ul class="subsection show">
+              <ul class="subsection">
                 {{#each item.children as subitem}}
                   <li id="menu-{{subitem.id}}" class="{{subitem.type}}">
                     <a on:click="scrollToItem(subitem, event)" href="#{{subitem.id}}">{{subitem.label}}</a>
@@ -93,10 +93,12 @@
         let hash = window.location.hash.substr(2);
         let filtered = this.get('menuItemsFlat').filter(item => item.id === hash);
 
-        if (filtered) {
+        if (filtered.length > 0) {
           let heading = document.getElementById(filtered[0].id);
           let top = window.scrollY + heading.getBoundingClientRect().top - 70;
           window.scrollTo(0, top);
+        } else {
+          window.scrollTo(0, 1);
         }
       },
       toggle () {
