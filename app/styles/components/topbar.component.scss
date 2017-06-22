@@ -88,6 +88,10 @@
       background: rgba(#fff, 0.2);
       padding: 0 2rem;
       font-size: 1.3rem;
+
+      @include viewports(up-to small) {
+        display: none;
+      }
     }
 
     .svg-icon {

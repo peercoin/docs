@@ -88,6 +88,7 @@
       },
       scrollTop() {
         window.scrollTo(0, 0);
+        this.close();
       },
       scrollToURLMenu () {
         let hash = window.location.hash.substr(2);
