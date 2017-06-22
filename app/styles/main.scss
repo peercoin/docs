@@ -30,6 +30,10 @@ body {
   text-align: center;
   padding: 6rem 1rem 4rem;
 
+  @include viewports(up-to small) {
+    padding-top: 3rem;
+  }
+
   .title {
     font-size: 2.5rem;
     color: #646464;
@@ -38,6 +42,10 @@ body {
 
   img {
     margin: -3.5rem 0 1.5rem;
+
+    @include viewports(up-to small) {
+      margin-top: 0rem;
+    }
   }
 
   .call-to-action {
