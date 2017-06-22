@@ -88,3 +88,17 @@ body {
     }
   }
 }
+
+.warn {
+  margin: 1rem;
+  padding: 2rem 3rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  background: tomato;
+
+  a {
+    color: #fff;
+  }
+}
