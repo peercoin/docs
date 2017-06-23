@@ -1,6 +1,17 @@
 @import "../_viewports";
 @import "../_variables";
 
+.menu-swipper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100%;
+  background: red;
+  z-index: 2;
+  display: none;
+}
+
 .doc-container {
   display: block;
 }

@@ -2,7 +2,8 @@
   <Topbar ref:topbar on:mobilemenu="handleMobileMenu(event)" on:fontsize="handleFontSize(event)" />
   <Menu ref:menu on:mobilemenu="handleMobileMenu(event)" />
   <div class="warn">Disclaimer:<br>This documentation is a work in progress. It isn't ready and shouldn't be shared with outsiders until the removal of this message. If you want to help build it, please <a href="https://github.com/peercoin/docs#peercoin-official-documentation-repository">click here</a>.</div>
-  <div class="doc-container font-{{fontSize}}" ref:docContainer>
+  <div class="menu-swipper" ></div>
+  <div class="doc-container font-{{fontSize}}" ref:docContainer on:swiperight="handleMobileMenu({action: 'OPEN'})">
     {{{ documentationHTML }}}
   </div>
 </div>
@@ -13,11 +14,23 @@
   import Topbar from './topbar.component';
   import marked from 'marked';
   import ajax from '@fdaciuk/ajax';
+  import Hammer from 'hammerjs';
   //import Prism from 'prismjs';
 
   export default {
     oncreate () {
       this.registerDocumentation();
+    },
+
+    events: {
+      swipeleft(node, callback) {
+        let h = new Hammer(node);
+        h.on('swipeleft', callback);
+      },
+      swiperight(node, callback) {
+        let h = new Hammer(node);
+        h.on('swiperight', callback);
+      }
     },
 
     data () {
@@ -53,6 +66,7 @@
           break;
           case 'CLOSE':
           this.refs.menu.close();
+          this.refs.topbar.set({isMenuOpen: false});
           break;
           case 'OPEN':
           this.refs.menu.open();

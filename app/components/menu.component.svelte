@@ -1,7 +1,7 @@
 <:Window on:scroll="onAppScroll(this.scrollY)" />
 <div>
   <div class="MenuComp--overlay {{(isOpen) ? 'active' : ''}}" ref:overlay on:click="fire('mobilemenu', {action: 'CLOSE'})"></div>
-  <div class="MenuComp {{(isOpen) ? 'open' : ''}}" ref:menu>
+  <div class="MenuComp {{(isOpen) ? 'open' : ''}}" ref:menu on:swipeleft="fire('mobilemenu', {action: 'CLOSE'})">
     <div class="logo" on:click="scrollTop()">
       <img src="img/logo.svg" alt="PeerAssets WhitePaper">
     </div>
@@ -25,11 +25,22 @@
 </div>
 
 <script>
+  import Hammer from 'hammerjs';
+
   export default {
     oncreate () {
-      //this.on('', () => {
+      console.log(Hammer);
+    },
 
-      //});
+    events: {
+      swipeleft(node, callback) {
+        let h = new Hammer(node);
+        h.on('swipeleft', callback);
+      },
+      swiperight(node, callback) {
+        let h = new Hammer(node);
+        h.on('swiperight', callback);
+      }
     },
 
     data () {
