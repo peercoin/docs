@@ -1,0 +1,75 @@
+@import "../_viewports";
+@import "../_variables";
+
+.SearchListComp {
+  flex: 1;
+  height: 100%;
+
+  > .svg-icon {
+    width: 15px;
+    height: 100%;
+    fill: #fff;
+  }
+
+  .search-popup {
+    position: absolute;
+    top: 100%;
+    margin-top: -1px;
+    width: 340px;
+    max-height: 500px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid $color-primary;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 3px 12px rgba(#000, 0.16);
+
+    .filter-input {
+      width: 100%;
+      border: none;
+      padding: 1rem;
+      font-size: 1.3rem;
+      border-bottom: 1px solid rgba($color-primary, 0.2);
+
+      &:focus {
+        outline: none;
+        background: rgba($color-primary, 0.05);
+      }
+    }
+
+    .filtered-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .item {
+        padding: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          background: rgba(#000, 0.04);
+        }
+
+        .section-title {
+          font-size: 1.5rem;
+          color: #292929;
+        }
+
+        .section-text {
+          font-size:1.2rem;
+          color: #95989A;
+        }
+      }
+    }
+
+    .empty-message {
+      background: #eee;
+      margin: 1rem;
+      border-radius: 3px;
+      color: rgba(#000, 0.3);
+      text-align: center;
+      padding: 1rem 0.5rem;
+      font-size: 1.4rem;
+      font-weight: normal;
+    }
+  }
+}

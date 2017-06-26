@@ -47,6 +47,34 @@
     },
 
     methods: {
+      getParentId(node) {
+        if(node === 'end') {
+          return null;
+        }
+          
+        if(node.id) {
+          return { id: node.id, title: node.textContent };
+        } else {
+          return this.getParentId(node.previousElementSibling || 'end');
+        }
+      },
+      generateSearchList() {
+        let children = [...document.querySelector('.doc-container').children];
+        let objectList = [];
+          
+        children.forEach((node) => {
+          let sectionData = this.getParentId(node);
+          if(sectionData) {
+            objectList.push({
+              id: sectionData.id,
+              title: sectionData.title,
+              content: node.textContent 
+            });
+          }
+        });
+
+        return objectList;
+      },
       handleFontSize (event) {
         let action = event.action;
         switch (action) {
@@ -106,6 +134,11 @@
 
           // Send menu to menu component
           this.refs.menu.startMenu(this.generateMenu());
+
+          // Send search objects to topbar and then search comp
+          this.refs.topbar.refs.searchlist.set({
+            searchList: this.generateSearchList()
+          });
 
           // Highlight code
           //Prism.highlightAll();

@@ -29,7 +29,6 @@
 
   export default {
     oncreate () {
-      console.log(Hammer);
     },
 
     events: {

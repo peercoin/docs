@@ -1,8 +1,8 @@
   <div class="TopbarComp">
     <div class="menu-button" on:click="fire('mobilemenu', {action: 'TOGGLE'})">
       <svg class="svg-icon {{ (!isMenuOpen) ? '' : 'off' }}" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 40 28">
-          <use xlink:href="img/icon-menu-open.svg#icon" preserveAspectRatio="xMidYMid" />
-        </svg>
+        <use xlink:href="img/icon-menu-open.svg#icon" preserveAspectRatio="xMidYMid" />
+      </svg>
     </div>
 
     {{#if settings.allow_font_size_control}}
@@ -13,12 +13,16 @@
         </svg>
       </div>
       <div class="btn btn-svg v-center" on:click="fire('fontsize', {action: 'INCREASE'})">
-         <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 26 20">
+        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 26 20">
           <use xlink:href="img/icon-font-plus.svg#icon" preserveAspectRatio="xMidYMid" />
         </svg>
       </div>
     </div>
     {{/if}}
+
+    <hr>
+
+    <SearchList ref:searchlist />
 
     {{#if settings.allow_topbar_link}}
     <a href="{{settings.topbar_link_url}}" class="btn btn-last-link">{{settings.topbar_link_label}}</a>
@@ -26,6 +30,7 @@
   </div>
 
   <script>
+    import SearchList from './searchlist.component';
     import Settings from '../herodotus-settings.js';
 
     export default {
@@ -33,6 +38,9 @@
         return {
           settings: Settings
         }
-      }
+      },
+      components: {
+        SearchList,
+      },
     }
   </script>
