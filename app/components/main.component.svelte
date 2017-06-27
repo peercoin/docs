@@ -52,7 +52,7 @@
           return null;
         }
           
-        if(node.id) {
+        if(node.id && ['H1', 'H2'].indexOf(node.tagName) > -1) {
           return { id: node.id, title: node.textContent };
         } else {
           return this.getParentId(node.previousElementSibling || 'end');

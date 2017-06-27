@@ -20,6 +20,14 @@
     width: 100%;
   }
 
+  hr {
+    width: 1px;
+    height: 17px;
+    margin: 0 1rem;
+    background: rgba(#000, 0.2);
+    border: none;
+  }
+
   .menu-button {
     display: none;
     position: relative;
@@ -75,6 +83,10 @@
       border-radius: 50% !important;
       padding: 0;
       margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     &.btn-last-link {

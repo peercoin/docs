@@ -1,16 +1,20 @@
 <div class="SearchListComp">
-  <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 15 15">
+  <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 15 15" on:click="toggleSearch()">
     <use xlink:href="img/icon-search.svg#icon" preserveAspectRatio="xMidYMid" />
   </svg>
 
-  <div class="search-popup">
-    <input type="text" class="filter-input" on:input="handleSearch(event)">
+  <div class="SearchListComp--overlay {{(isOpen) ? 'active' : ''}}" on:click="closeSearch()"></div>
+
+  <div class="search-popup {{(isOpen)? 'open' : ''}}">
+    <input type="text" ref:input class="filter-input" on:input="handleSearch(event)" on:keydown="isClosable(event)" placeholder="Search here...">
     {{#if filteredList.length > 1 }}
     <ul class="filtered-list">
       {{#each filteredList as item}}
       <li class="item">
-        <div class="section-title">{{item.item.title}}</div>
-        <div class="section-text">{{item.item.content.substr(0, 100)}}...</div>
+        <a href="#/{{item.item.id}}" on:click="closeSearch()">
+          <div class="section-title">{{item.item.title}}</div>
+          <div class="section-text">{{item.item.content.substr(0, 100)}}...</div>
+        </a>
       </li>
       {{/each}}
     </ul>
@@ -35,10 +39,30 @@
       return {
         searchList: [],
         filteredList: [],
-        fuse: null
+        fuse: null,
+        isOpen: false
       }
     },
     methods: {
+      openSearch() {
+        this.set({isOpen: true});
+        this.refs.input.focus();
+      },
+      closeSearch() {
+        this.set({isOpen: false});
+      },
+      toggleSearch() {
+        if(this.get('isOpen')) {
+          this.closeSearch();
+        } else {
+          this.openSearch();
+        }
+      },
+      isClosable(e) {
+        if (e.keyCode === 27) {
+          this.closeSearch();
+        }
+      },
       setFuse(searchList) {
         if(searchList.length < 1) {
           return;
@@ -50,7 +74,7 @@
             includeMatches: true,
             threshold: 0.3,
             location: 0,
-            distance: 1000,
+            distance: 10000,
             maxPatternLength: 32,
             minMatchCharLength: 3,
             keys: [

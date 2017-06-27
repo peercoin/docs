@@ -3,7 +3,7 @@
   <div class="MenuComp--overlay {{(isOpen) ? 'active' : ''}}" ref:overlay on:click="fire('mobilemenu', {action: 'CLOSE'})"></div>
   <div class="MenuComp {{(isOpen) ? 'open' : ''}}" ref:menu on:swipeleft="fire('mobilemenu', {action: 'CLOSE'})">
     <div class="logo" on:click="scrollTop()">
-      <img src="img/logo.svg" alt="PeerAssets WhitePaper">
+      <img src="img/logo.svg" alt="Peercoin Docs">
     </div>
     <ul class="menu">
       {{#each menuItems as item}}
@@ -29,6 +29,9 @@
 
   export default {
     oncreate () {
+      window.onhashchange = () => {
+        this.scrollToURLMenu();
+      }
     },
 
     events: {

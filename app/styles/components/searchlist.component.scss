@@ -1,6 +1,24 @@
 @import "../_viewports";
 @import "../_variables";
 
+.SearchListComp--overlay {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  background: #fff;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  transition: all 0.2s linear;
+
+  &.active {
+    opacity: 0.8;
+    pointer-events: all;
+  }
+}
+
 .SearchListComp {
   flex: 1;
   height: 100%;
@@ -13,6 +31,7 @@
 
   .search-popup {
     position: absolute;
+    z-index: 2;
     top: 100%;
     margin-top: -1px;
     width: 340px;
@@ -20,8 +39,23 @@
     overflow-y: auto;
     background: #fff;
     border: 1px solid $color-primary;
-    border-radius: 0 0 4px 4px;
     box-shadow: 0 3px 12px rgba(#000, 0.16);
+    transition: all 0.3s linear;
+    opacity: 0;
+    pointer-events: none;
+
+    @include viewports(up-to small) {
+      width: 100%;
+      max-height: calc(100vh - 50px);
+      left: 0;
+      border: none;
+      border-radius: 0;
+    }
+
+    &.open {
+      pointer-events: all;
+      opacity: 1;
+    }
 
     .filter-input {
       width: 100%;
@@ -47,6 +81,11 @@
 
         &:hover {
           background: rgba(#000, 0.04);
+        }
+
+        a {
+          text-decoration: none;
+          color: inherit;
         }
 
         .section-title {
