@@ -21,19 +21,32 @@
 
 .SearchListComp {
   flex: 1;
+  display: flex;
+  align-items: center;
   height: 100%;
 
-  > .svg-icon {
-    width: 15px;
-    height: 100%;
-    fill: #fff;
+  .btn.btn-svg {
+    &:first-child {
+      margin-left: 0 !important;
+    }
+    
+
+    .svg-icon {
+      width: 13px;
+      height: 13px;
+      margin-left: -1px;
+      height: 100%;
+      fill: #fff;
+    }
   }
+
 
   .search-popup {
     position: absolute;
     z-index: 2;
     top: 100%;
     margin-top: -1px;
+    margin-left: -1.1rem;
     width: 340px;
     max-height: 500px;
     overflow-y: auto;
@@ -48,6 +61,7 @@
       width: 100%;
       max-height: calc(100vh - 50px);
       left: 0;
+      margin-left: 0;
       border: none;
       border-radius: 0;
     }
@@ -63,6 +77,11 @@
       padding: 1rem;
       font-size: 1.3rem;
       border-bottom: 1px solid rgba($color-primary, 0.2);
+
+      @include viewports(up-to small) {
+        font-size: 1.5rem;
+        padding: 1.5rem 1rem;
+      }
 
       &:focus {
         outline: none;

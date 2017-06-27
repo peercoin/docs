@@ -1,8 +1,10 @@
 <div class="SearchListComp">
-  <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 15 15" on:click="toggleSearch()">
-    <use xlink:href="img/icon-search.svg#icon" preserveAspectRatio="xMidYMid" />
-  </svg>
-
+  <div class="btn btn-svg">
+    <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 15 15" on:click="toggleSearch()">
+      <use xlink:href="img/icon-search.svg#icon" preserveAspectRatio="xMidYMid" />
+    </svg>
+  </div>
+  
   <div class="SearchListComp--overlay {{(isOpen) ? 'active' : ''}}" on:click="closeSearch()"></div>
 
   <div class="search-popup {{(isOpen)? 'open' : ''}}">
