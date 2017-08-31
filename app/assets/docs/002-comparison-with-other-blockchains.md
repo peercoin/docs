@@ -3,6 +3,12 @@
 Peercoin is best compared with it's sibling - Bitcoin; however in the following table we'll show how it bodes against something vastly different like Ethereum. Peercoin was invented as response to increasing doubts on Bitcoin's PoW consensus model with regards to it's increasing centralization and vast amounts of wasted energy. Peercoin can be understood as Proof-of-Stake clone of the Bitcoin but that is an oversimplification as Peercoin differs vastly - especially when it comes to economics of the system.
 Major differences between the two are the fee market, ie. the absence of it in Peercoin and Peercoins dedication to continual distribution while the Bitcoin distribution is reduced geometrically every four years until it becomes zero.
 
+
+### Consensus algorithm
+
+### Distribution
+
+
 ### Fee market
 
 Fee market is a mechanism which provides a mechanism to decide which transaction has priority over the others. Transaction fee is claimed by the block miner in both Bitcoin and Ethereum economic system so the miners have incentive to include the transaction in the block they mine. If Alice wants her transaction to be included in the next block, she should set transaction fee higher and pay more then other network users. It is presumed that miners as rational subjects will first include transactions which carry the most Bitcoin value. If Alice pays transaction with fee which is under the average fee at the time she might wait for several blocks (or hundreds of blocks) to see her transaction included and confirmed. So, it is obvious that fee market serves as the incentive for miners to process and include the transactions in the mined block as well.
