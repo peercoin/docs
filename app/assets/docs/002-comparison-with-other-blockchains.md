@@ -60,9 +60,9 @@ Bitcoin and Peercoin generate a block every 10 minutes while Ethereum generates 
 </tr>
 <tr>
 <td>Distribution method:</td>
-<td>PoW block reward (+ tx fees)</td>
+<td>PoW block reward</td>
 <td>PoS block reward / PoW block reward</td>
-<td>Initial Coin Offering / PoW block reward (+ tx fees)</td>
+<td>Initial Coin Offering / PoW block reward</td>
 </tr>
 <tr>
 <td>Distribution:</td>
