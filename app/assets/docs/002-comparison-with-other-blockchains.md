@@ -11,12 +11,12 @@ Major differences between the two are the fee market, ie. the absence of it in P
 
 ### Fee market
 
-Fee market is a mechanism which provides a mechanism to decide which transaction has priority over the others. Transaction fee is claimed by the block miner in both Bitcoin and Ethereum economic system so the miners have incentive to include the transaction in the block they mine. If Alice wants her transaction to be included in the next block, she should set transaction fee higher and pay more then other network users. It is presumed that miners as rational subjects will first include transactions which carry the most Bitcoin value. If Alice pays transaction with fee which is under the average fee at the time she might wait for several blocks (or hundreds of blocks) to see her transaction included and confirmed. So, it is obvious that fee market serves as the incentive for miners to process and include the transactions in the mined block as well.
-With Bitcoin block size limit is set to 1MB to keep the upward pressure on the transaction fees and incentivize miners to validate the transactions.
+Fee market is provides a mechanism to decide which transaction has priority over the others. Transaction fee is claimed by the block miner in both Bitcoin and Ethereum economic system so the miners have incentive to include the transaction in the block they mine. If Alice wants her transaction to be included in the next block, she should set transaction fee higher and pay more then other network users. It is presumed that miners as rational subjects will first include transactions which carry the most Bitcoin value. If Alice pays transaction with fee which is under the average fee at the time she might wait for several blocks (or hundreds of blocks) to see her transaction included and confirmed. So, it is obvious that fee market serves as the incentive for miners to process and include the transactions in the mined block as well.
+With Bitcoin block size limit is set to 1MB to keep the upward pressure on the price of the transaction fees and incentivize miners to validate the transactions. This is especially important as Bitcoin economy is expected to run on transaction fees alone when the block subsidies stop when total amount of issued tokens is 21 million.
 
 Peercoin fees are fixed (0.01 PPC per kb) and are burned, which is equivalent to paying the transaction fee to each Peercoin holder in proportion to their Peercoin holdings as fee is deducted from the total supply of Peercoins. This property eliminates the need for fee market on Peercoin network and allows every transaction to get included in the very next block. Peercoin retains the 1MB block size limit as it is based on the Bitcoin code, but it has no intricate need to keep it. Block size limit will definitely be increased as Peercoin network grows in usage. Peercoin developers have already hinted that Peercoin will feature dynamic block size in near future.
 Due to this economic properties of Peercoin a question arises: why do Peercoin miners even bother processing the transactions?
-There are two answers, one from perspective of a miner as 3rd party subject with shallow relation with th enetwork (Bitcoin style) and another where it is acknowledged that Peercoin minters are co-owners of the network itself and their incentive is to keep the blockchain valuable.
+From perspective of a miner as 3rd party subject with shallow relation to network (Bitcoin style) and another where it is acknowledged that Peercoin minters are co-owners of the network itself and their incentive is to keep the blockchain valuable.
 
 For spectator looking at this from Bitcoin perspective answer is that Peercoin block miners want to process transactions so they allow Peercoins to be burned - thus making their own stake in the network more valuable.
 However when intricacies of PoS are learned it is understood that with Peercoin minters (PoS miners) include transactions because it doesn't cost much to include them, while producing empty blocks reduces the value of the blockchain, and therefore of their stake. The burned fees are not really an argument as the effect on their holdings is negligible.
@@ -61,7 +61,7 @@ Bitcoin and Peercoin generate a block every 10 minutes while Ethereum generates 
 <tr>
 <td>Distribution method:</td>
 <td>PoW block reward</td>
-<td>PoS block reward / PoW block reward</td>
+<td>PoW block reward / PoS block reward</td>
 <td>Initial Coin Offering / PoW block reward</td>
 </tr>
 <tr>
@@ -74,7 +74,7 @@ Bitcoin and Peercoin generate a block every 10 minutes while Ethereum generates 
 <tr>
 <td>Transaction fee:</td>
 <td>Fee market (~390 satoshis/byte)</td>
-<td>Static 0.01 PPC/kb</td>
+<td>Static 0.01 PPC/kb (~0.2 Btc satoshis/byte)</td>
 <td>Fee market (~23 Gwei/byte)</td>
 </tr>
 <tr>
@@ -110,4 +110,4 @@ Bitcoin and Peercoin generate a block every 10 minutes while Ethereum generates 
 </tbody>
 </table>
 Table 1. Comparison of Crypto currency attributes
-
+(prices of transactions at the time of writing)
