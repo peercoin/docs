@@ -55,6 +55,7 @@
     transition: all 0.3s linear;
     opacity: 0;
     pointer-events: none;
+    padding: 1rem;
 
     @include viewports(up-to small) {
       width: 100%;
@@ -75,7 +76,9 @@
       border: none;
       padding: 1rem;
       font-size: 1.3rem;
-      border-bottom: 1px solid rgba($color-primary, 0.2);
+      border-radius: 5px;
+      background: rgba($color-fonts, 0.05);
+      transition: background 0.15s linear;
 
       @include viewports(up-to small) {
         font-size: 1.5rem;
@@ -84,14 +87,14 @@
 
       &:focus {
         outline: none;
-        background: rgba($color-primary, 0.05);
+        background: rgba($color-fonts, 0.10);
       }
     }
 
     .filtered-list {
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin: 1rem 0 0 0;
 
       .item {
         padding: 1rem;
@@ -120,13 +123,13 @@
 
     .empty-message {
       background: #eee;
-      margin: 1rem;
+      margin: 1rem 0;
       border-radius: 3px;
       color: rgba(#000, 0.3);
       text-align: center;
-      padding: 1rem 0.5rem;
       font-size: 1.4rem;
       font-weight: normal;
+      padding: 1rem 0.5rem;
     }
   }
 }

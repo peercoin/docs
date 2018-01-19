@@ -5,6 +5,10 @@
       </svg>
     </div>
 
+    <div class="logo" on:click="scrollTop()">
+      <img src="img/logo.svg" alt="Peercoin Docs">
+    </div>
+
     {{#if settings.allow_font_size_control}}
     <div class="btn-group">
       <div class="btn btn-svg v-center" on:click="fire('fontsize', {action: 'DECREASE'})">
@@ -25,7 +29,7 @@
     <SearchList ref:searchlist />
 
     {{#if settings.allow_topbar_link}}
-    <a href="{{settings.topbar_link_url}}" class="btn btn-last-link">{{settings.topbar_link_label}}</a>
+    <a href="{{settings.topbar_link_url}}" class="btn btn-last-link"><span>Contribute to</span><b>{{settings.topbar_link_label}}</b></a>
     {{/if}}
   </div>
 

@@ -2,9 +2,7 @@
 <div>
   <div class="MenuComp--overlay {{(isOpen) ? 'active' : ''}}" ref:overlay on:click="fire('mobilemenu', {action: 'CLOSE'})"></div>
   <div class="MenuComp {{(isOpen) ? 'open' : ''}}" ref:menu on:swipeleft="fire('mobilemenu', {action: 'CLOSE'})">
-    <div class="logo" on:click="scrollTop()">
-      <img src="img/logo.svg" alt="Peercoin Docs">
-    </div>
+    <img src="img/logo-green.svg" alt="Peercoin Docs" class="logo">
     <ul class="menu">
       {{#each menuItems as item}}
         <li id="menu-{{item.id}}" class="{{item.type}}">

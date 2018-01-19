@@ -12,6 +12,14 @@
   display: none;
 }
 
+.body {
+  padding-left: $app-menu-width;
+
+  @include viewports(up-to small) {
+    padding-left: 0;
+  }
+}
+
 .doc-container {
   display: block;
 }
@@ -216,5 +224,39 @@
   sub {
     color: rgba($color-neutral, 0.5);
 
+  }
+
+  table {
+    border-spacing: 0;
+    box-shadow: 0 5px 20px rgba($color-fonts, 0.15);
+
+    thead {
+      tr {
+        th {
+          background: $color-primary;
+          color: #fff;
+          padding: 1rem;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          td {
+            background: rgba($color-fonts, 0.05);
+          }
+        }
+
+        td {
+          padding: 1rem;
+          border-right: 1px solid rgba($color-fonts, 0.05);
+
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }      
+    }
   }
 }

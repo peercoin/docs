@@ -28,20 +28,23 @@
 
 .MenuComp {
   position: fixed;
-  top: 0;
+  top: $app-topbar-height;
   left: 0;
   z-index: 10;
   width: $app-menu-width;
-  height: 100vh;
+  height: calc(100vh - #{$app-topbar-height});
   overflow-y: auto;
   user-select: none;
-  background: $color-lightneutral;
-  box-shadow: -1px 0 0 rgba($color-fonts, 0.08) inset;
+  background: rgba($color-menu-bg, 0.08);
+  // box-shadow: -1px 0 0 rgba($color-fonts, 0.08) inset;
 
   @include viewports(up-to small) {
     transition: transform 0.5s cubic-bezier(.17,.67,.45,1);
     transform: translate3d(-100%, 0, 0);
     box-shadow: 5px 0 30px rgba(#000, 0.1);
+    background: #fff;
+    top: 0;
+    height: 100vh;
   }
 
   &.open {
@@ -67,10 +70,25 @@
     }
   }
 
+  > .logo {
+    display: none;
+
+    @include viewports(up-to small) {
+      display: block;
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+
   > .menu {
     margin: 0;
     padding: 0;
+    padding-top: 36px;
     list-style: none;
+
+    @include viewports(up-to small) {
+      padding-top: 0;
+    }
 
     li {
       font-size: 1.4rem;
@@ -78,7 +96,7 @@
       cursor: pointer;
 
       @include viewports(up-to small) {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
 
       ul {
@@ -107,27 +125,25 @@
       }
 
       &.h1 {
-        color: #fff;
+        color: $color-fonts;
         font-weight: bold;
         //height: 33px;
         overflow: hidden;
 
         > a {
           position: relative;
-          background: rgba(#fff, 0.08);
-          box-shadow: 0 1px 0 rgba(#fff, 0.08) inset, 0 -1px 0 rgba(#fff, 0.08) inset;
           margin-bottom: 1px;
 
           &:hover {
-            background: rgba(#fff, 0.1);
-            color: #fff;
+            color: $color-primary;
           }
         }
       }
 
       &.h2 {
+        font-weight: normal;
         font-size: 1.3rem;  
-        color: rgba(#fff, 0.5);
+        color: $color-fonts;
         background: rgba(#fff, 0.05);
 
         @include viewports(up-to small) {
@@ -139,36 +155,24 @@
           padding-left: 3rem;
 
           &:hover {
-            background: rgba(#fff, 0.05);
-            color: #fff;
+            color: $color-primary;
           }
         }
       }
 
       &.active {
         > a {
-          background: $color-primary !important;
-          font-weight: bold;
-          color: rgba(#fff, 0.7);
-          
-          &:before, &:after {
+          background: rgba($color-primary, 0.05) !important;
+
+          &:after {
             content: '';
             position: absolute;
             right: 0px;
             top: 0;
             height: 100%;
             display: block;
-          }
-
-          &:before {
-            right: 4px;
             width: 1px;
-            background: rgba(#fff, 0.7);
-          }
-
-          &:after {
-            width: 4px;
-            background: rgba(#fff, 0.5);
+            background: $color-primary;
           }
         }
       }
