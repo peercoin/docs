@@ -9,7 +9,8 @@ In the future repository may host other Peercoin-related packages.
 ## Adding the GPG key
 
 `wget -O - https://repo.peercoin.net/peercoin.gpg.key | sudo apt-key add -`
-sudo sh -c "echo 'deb http://repo.peercoin.net stretch main' >> /etc/apt/sources.list.d/peercoin.list"
+
+`sudo sh -c "echo 'deb http://repo.peercoin.net stretch main' >> /etc/apt/sources.list.d/peercoin.list"`
 
 ## Adding the repository in the sources
 
