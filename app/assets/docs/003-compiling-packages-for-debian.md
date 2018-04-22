@@ -91,7 +91,17 @@ Make the directory where pbuilder will place the packages:
 
 `mkdir -p $HOME/pbuild-results`
 
-## Building the packages
+### Bootstrap the chroots
+
+Raspbian:
+
+> sudo OS=raspbian DIST=stretch ARCH=armhf pbuilder --create
+
+Debian stable:
+
+> sudo OS=debian DIST=stretch ARCH=amd64 pbuilder --create
+
+## Preparing for build
 
 (compiling for Raspbian stretch in this example)
 
@@ -115,3 +125,16 @@ Copy the debian directory from the contrib to this directory:
 
 `sed '/./configure --with-gui=qt5 --with-incompatible-bdb/s/$/ --with-boost-libdir=/usr/lib/arm-linux-gnueabihf/' debian/rules`
 
+## Building the package
+
+`OS=raspbian DIST=stretch ARCH=armhf pdebuild`
+
+And wait, it will take a while so go get a coffee or something. It's compiling by emulating ARM cpu in QEMU.
+
+The concept of pbuild and cross-platform compilations is that you pass it this environment variables like "OS" and "DIST".
+
+For example OS=debian and DIST=wheezy will use Debian Wheezy chroot, you can also pick architecture by using ARCH= environment variable.
+
+__________________________________________________
+
+source: https://jodal.no/2015/03/08/building-arm-debs-with-pbuilder/
