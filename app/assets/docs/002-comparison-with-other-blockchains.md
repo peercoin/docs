@@ -110,3 +110,5 @@ Bitcoin and Peercoin generate a block every 10 minutes while Ethereum generates 
 </table>
 Table 1. Comparison of Crypto currency attributes
 (prices of transactions at the time of writing)
+
+---

@@ -19,3 +19,5 @@ In the future repository may host other Peercoin-related packages.
 ## Installing the packages
 
 `sudo apt install peercoin-qt`
+
+---
