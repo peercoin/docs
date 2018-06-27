@@ -8,7 +8,7 @@
     "start": "brunch watch --server -n",
     "build": "echo 'Generating production optimized code, this may take a while...\n' && brunch build --production && echo 'You can find your production files at /public folder.\n\n'",
     "build:docs": "node task-build-docs.js",
-    "deploy": "node task-deploy.js"
+    "deploy": "npm run build && npm run build:docs && cp CNAME public && node task-deploy.js"
   },
   "dependencies": {
     "@fdaciuk/ajax": "^2.1.5",
