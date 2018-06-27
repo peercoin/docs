@@ -8,6 +8,16 @@ Major differences between the two are the fee market, ie. the absence of it in P
 
 ### Distribution
 
+Peercoin is continually distributed via PoW block rewards. At the time of writing there is 24,828,480.19 PPC issued with annual inflation of 2.3%.
+The `MAX_MONEY` variable in the Peercoin source code is nothing but a placeholder.
+There is no final number of Peercoins issued, while inflation is steadily diverging toward fixed 1%.
+Peercoin PoW block reward is product of network Proof-of-Work hashrate. The higher the network hashrate, the lower the block reward.
+This mechanism effectively pegging the issuance of Peercoins to the development of SHA256 asic miners. Reasoning behind this decision is that it's expected that development of SHA256 miners represent the level of advancement of general cryptocurrency scene, at least that is something that is visible to the blockchain and can be encode in algorithm.
+
+Proof-of-Work reward formula is:  `difficulty == (9999 / (mint per block)) ** 4`
+
+Proof-of-Work coin mint rate is a function of difficulty, for every 16x in difficulty mint rate is halved.
+
 
 ### Fee market
 
