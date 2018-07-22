@@ -1,6 +1,7 @@
 # JSON-RPC API reference
 
 Peercoin daemon offers JSON-RPC interface which can be used to control the daemon or integrate it with software stack.
+You can send commands to the daemon by using `peercoin-cli` tool.
 
 There are two official wrappers for this interface, a PHP one and a Python2.7+ one.
 
@@ -51,3 +52,4 @@ https://github.com/peercoin/peercoin-php-rpc
 | `sendrawtransaction`  | `hex_string` |Submits raw transaction (serialized, hex-encoded) to local node and network.|no|
 | `validateaddress`     | `address` |Return information about `address`.|no|
 | `encryptwallet`       | `passphrase` |Encrypts the wallet with `passphrase`|no|
+| `enforcecheckpoint`   | `bool` |`enforce` is true or false to enable or disable enforcement of broadcasted checkpoints by developer.`|no|
