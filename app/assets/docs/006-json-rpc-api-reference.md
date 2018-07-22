@@ -52,4 +52,4 @@ https://github.com/peercoin/peercoin-php-rpc
 | `sendrawtransaction`  | `hex_string` |Submits raw transaction (serialized, hex-encoded) to local node and network.|no|
 | `validateaddress`     | `address` |Return information about `address`.|no|
 | `encryptwallet`       | `passphrase` |Encrypts the wallet with `passphrase`|no|
-| `enforcecheckpoint`   | `bool` |`enforce` is true or false to enable or disable enforcement of broadcasted checkpoints by developer.`|no|
+| `enforcecheckpoint`   | `bool` |`enforce` is true or false to enable or disable enforcement of broadcasted checkpoints by developer.|no|
