@@ -18,7 +18,7 @@ PeerAssets uses a somewhat different phrasing to describe the protocol and it's 
 
 `Card - individual token`
 
-# Transaction types
+## Transaction types
 
 PeerAssets protocol has four elemental transaction types:
 
@@ -44,21 +44,21 @@ Destroys tokens and removes them from the supply.
 
 Standard p2p token transaction, transfer a token from the address where they reside to a new address.
 
-# Tools
+## Tools
 
-## pacli
+### pacli
 
 This command line program is useful as companion utility during PeerAssets development and testing. It is built for console usage via intuitive and easy to learn set of commands. It stores the privkey in OS's native keystore, which is automatically unlocked upon logging into active user session.
 
 github: https://github.com/PeerAssets/pacli
 
-## pypeerassets
+### pypeerassets
 
 Official Python implementation of the PeerAssets protocol.
 
 github: https://github.com/PeerAssets/pypeerassets
 
-## papi
+### papi
 
 PeerAssets API provider, implemented using pypeerassets.
 
@@ -66,9 +66,9 @@ github: https://github.com/PeerAssets/papi
 
 deployed: https://papi.peercoin.net/api/v1/decks
 
-# Wallets
+## Wallets
 
-## chizukeki
+### chizukeki
 
 (work in progress)
 
@@ -78,7 +78,7 @@ code: https://github.com/peerassets/chizukeki
 
 deployed: https://peerassets.github.io/chizukeki/
 
-# Future plans & research
+## Future plans & research
 
 The PeerAssets project has adopted [RFC](https://en.wikipedia.org/wiki/Request_for_Comments) schema of sharing new ideas and establishing standards like the Peercoin project.
 RFC's are submitted on the PeerAssets [github repo](https://github.com/PeerAssets/peerassets-rfcs) and peer-reviewed, after which code experimentation and final implementation proceeds.
@@ -97,7 +97,7 @@ There is a number of interesting RFC which are currently discussed, such as:
 
 > The primary purpose of this protocol is to record cryptographic hashes of successive revisions of single-file documents in a public blockchain, in a manner which enables thin clients to easily query and verify document histories. Such histories inherit useful properties from the underlying blockchain, namely immutability and massive replication, and can therefore serve as proofs of existence.
 
-# Articles
+## Articles
 
 [PeerAssets deck issue modes](https://medium.com/peercoin/peerassets-deck-issue-modes-c419f38f7800)
 
