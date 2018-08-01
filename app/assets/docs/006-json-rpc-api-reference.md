@@ -53,3 +53,4 @@ https://github.com/peercoin/peercoin-php-rpc
 | `validateaddress`     | `address` |Return information about `address`.|no|
 | `encryptwallet`       | `passphrase` |Encrypts the wallet with `passphrase`|no|
 | `enforcecheckpoint`   | `bool` |`enforce` is true or false to enable or disable enforcement of broadcasted checkpoints by developer.|no|
+| `keypoolrefill`       | `size` |Fills the key pool with new keys [default 100 new keys]|yes|
