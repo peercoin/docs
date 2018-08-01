@@ -17,7 +17,7 @@
   import marked from 'marked';
   import ajax from '@fdaciuk/ajax';
   import Hammer from 'hammerjs';
-  //import Prism from 'prismjs';
+  import Prism from 'prismjs';
 
   export default {
     oncreate () {
@@ -142,8 +142,22 @@
             searchList: this.generateSearchList()
           });
 
+          // Make tables responsive
+          this.responsiveTables();
+
           // Highlight code
-          //Prism.highlightAll();
+          Prism.highlightAll();
+        });
+      },
+      responsiveTables() {
+        const tables = Array.from(document.querySelectorAll('.doc-container table'));
+
+        tables.forEach((table) => {
+          const responsiveElement = document.createElement('div');
+          
+          responsiveElement.classList.add('responsive-table');
+          table.parentElement.insertBefore(responsiveElement, table);
+          responsiveElement.appendChild(table);
         });
       },
       generateMenu () {
