@@ -18,7 +18,6 @@ sync from your hard drive instead of the internet. Using a
 
 Any synced client has the ability to make a `bootstrap.dat` file. Assuming
 you're running linux you can do the following to manufacture your own.
-
 First, shutdown your client. Allow it to cleanly exit so we know the block
 data is settled.
 
@@ -27,8 +26,28 @@ notice the files named `blk00000.dat`, `blk00001.dat`, `blk00002.dat`, etc.
 These are the raw block data files that can be combined to form the
 `bootstrap.dat`!
 
-The command `cat blk*.dat > bootstrap.dat` will produce the `bootstrap.dat`.
+The command:
+> cat blk*.dat > bootstrap.dat
+
+will produce the `bootstrap.dat`.
 The file is often then compressed (zip'ed, tar/gzip'ed) and shared.
+
+The same process can be executed on Microsoft Windows (7+):
+
+> CD C:\Users\<my_user>\AppData\Roaming\Peercoin
+
+> COPY /b blk0001.dat+blk0002.dat bootstrap.dat
+
+Or on OS X:
+
+> cd "/Library/Application Support/Peercoin/"
+
+> cat blk*.dat > bootstrap.dat
+
+
+On linux and OS X you can create hash of the booststrap:
+
+> sha256 bootstrap.dat
 
 ## How do I use a `bootstrap.dat`?
 
