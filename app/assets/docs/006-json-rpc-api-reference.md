@@ -54,3 +54,5 @@ https://github.com/peercoin/peercoin-php-rpc
 | `encryptwallet`       | `passphrase` |Encrypts the wallet with `passphrase`|no|
 | `enforcecheckpoint`   | `bool` |`enforce` is true or false to enable or disable enforcement of broadcasted checkpoints by developer.|no|
 | `keypoolrefill`       | `size` |Fills the key pool with new keys [default 100 new keys]|yes|
+| `listlockunspent`     |        |Returns list of temporarily unspendable outputs.|no|
+| `createmultisig`      | `nrequired` `["key,"key"]`|Creates a multi-signature address and returns a json object.|yes|
