@@ -40,7 +40,7 @@ The same process can be executed on Microsoft Windows (7+):
 
 Or on OS X:
 
-> cd "/Library/Application Support/Peercoin/"
+> cd "~/Library/Application Support/Peercoin/"
 
 > cat blk*.dat > bootstrap.dat
 
