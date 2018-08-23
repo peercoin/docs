@@ -31,3 +31,8 @@ The win in proof-of-stake minting, the calculated hash is compared to the curren
 * A transaction that just staked has its coins is locked for 520 confirmations (3-4 days).
 * Merging transactions, spending coins, etc. burns coinage (resets it to 0).
 * PoS reward is directly added to your transaction which staked (if this transaction is split in two because coinage < 90 days, the reward is equally distributed to both resulting transactions).
+
+## Peercoin v0.5 Proof-of-Stake protocol
+
+![Peercoin PoS diagram](../img/pos-diagram.svg)
+<img src="../img/pos-diagram.svg">
