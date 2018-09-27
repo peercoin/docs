@@ -1,4 +1,4 @@
-# stakebox
+# Stakebox
 
 ![stakebox](https://talk.peercoin.net/uploads/default/original/2X/8/8581bbbb551a82aea92598a5aa93c4144e387317.png)
 
