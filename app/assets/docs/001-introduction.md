@@ -47,3 +47,34 @@ You should also make the peercoin.conf file only readable to its owner.
 On Linux, Mac OSX, and other Unix-like systems, this can be accomplished by running the following command in the Peercoin application directory:
 
 > chmod 0600 peercoin.conf
+
+##  Unofficial client implementations
+
+### Coinomi
+
+https://www.coinomi.com/
+
+### Coinspot
+
+https://www.coinspot.com.au
+
+### CoinVault
+
+https://www.coinvault.io/
+
+### Cryptonator
+
+https://www.cryptonator.com/
+
+### HolyTransaction
+
+https://holytransaction.com/
+
+### Magnum
+
+Airdrop focused wallet
+https://magnumwallet.co
+
+### UberPay
+
+http://uberpay.io/
