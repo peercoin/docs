@@ -82,7 +82,13 @@ _________________________________________
 
 Reference Peercoin client is not capable of indexing the multisig addresses and showing their balance because multisig addresses can be owned by keys which are not part of the wallet (friends, family, backup). Thus the procedure to spend the funds from the multisig is a bit more complicated, more "low level" then usual.
 
+In the "Spend Funds" tab of the multisig dialog, on the left there is "Inputs" table. You need to provide with the [UTXO](https://en.wikipedia.org/wiki/Unspent_transaction_output) you want to spend. That is, the `txid` and output index. On the right side there is "Outputs" table, where the desired outputs will be placed. Please note that you have to include the change output and deduct the tx fee (0.01 PPC per kB).
+
+After that is set, click on the "Create Transaction" button bellow, and copy the resulting hash to your peers for further signing.
+Finally paste the hash of fully signed raw transaction into "Sign Transaction" box bellow and click send.
+
 ![Peercoin-qt multisig spending](../img/multisig-spend.png)
+
 
 ### Spending from the multisig via command line interface
 
