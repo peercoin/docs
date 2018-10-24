@@ -98,9 +98,12 @@ There is a number of interesting RFC which are currently discussed, such as:
 > The primary purpose of this protocol is to record cryptographic hashes of successive revisions of single-file documents in a public blockchain, in a manner which enables thin clients to easily query and verify document histories. Such histories inherit useful properties from the underlying blockchain, namely immutability and massive replication, and can therefore serve as proofs of existence.
 
 ## Articles
+[Whitepaper](http://peerassets.github.io/WhitePaper/)
 
 [PeerAssets deck issue modes](https://medium.com/peercoin/peerassets-deck-issue-modes-c419f38f7800)
 
 [The benefits of PeerAssets](https://medium.com/peercoin/the-benefits-of-peerassets-77bad7693925)
 
-[Whitepaper](http://peerassets.github.io/WhitePaper/)
+[[Tutorial] PeerAssets Peer to Peer (p2p) Transactions](https://talk.peercoin.net/t/tutorial-peerassets-peer-to-peer-p2p-transactions/8640)
+
+[[Tutorial] Basic Deck Creation with PeerAssets](https://talk.peercoin.net/t/tutorial-basic-deck-creation-with-peerassets/8639)
