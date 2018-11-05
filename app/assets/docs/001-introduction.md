@@ -72,6 +72,10 @@ https://www.cryptonator.com/
 
 https://holytransaction.com/
 
+### Ledger
+
+https://www.ledger.com/
+
 ### Magnum
 
 Airdrop focused wallet
