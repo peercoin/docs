@@ -1,6 +1,7 @@
 # How to buy Peercoin
 
-There are many ways to buy Peercoin, although it may depend on your previous exchange access or location.  You should have a Peercoin wallet set up previously to making a purchase so that you have a place to store your Peercoin.  
+There are many ways to buy Peercoin, although it may depend on your previous exchange access or location.
+You should have a Peercoin wallet set up previously to making a purchase so that you have a place to store your Peercoin.  
 
 ## Fiat gateways
 
@@ -32,16 +33,16 @@ CoinBase is one of the most popular broker sites and is arguably the most common
 ### Gemini
 
 https://gemini.com
-Gemini also offers fiat purchasing options for bitcoin with bank wire options.  
+Gemini also offers fiat purchasing options for Bitcoin with bank wire options.  
 
 ### OkCoin
 
 https://www.okcoin.com/lang/en-US/
-Offers fiat deposits by wire to buy bitcoin and other common coins.
+Offers fiat deposits by wire to buy Bitcoin and other common coins.
 
-It is strongly recommended to purchase bitcoin as it has the most traded pairs for the exchanges that list Peercoin which will be discussed in the section below.  Once you have made a purchase, send those coins over to your chosen exchange and make your purchase of Peercoin.
+It is strongly recommended to purchase Bitcoin as it has the most traded pairs for the exchanges that list Peercoin which will be discussed in the section below.  Once you have made a purchase, send those coins over to your chosen exchange and make your purchase of Peercoin.
 
-There are other websites that can be used to buy bitcoin with a debit or credit card, and there are a plethora of guides available on these sites.  We suggest you find a reputable site with low fees and a large number of positive user reviews over time.
+There are other websites that can be used to buy Bitcoin with a debit or credit card, and there are a plethora of guides available on these sites.  We suggest you find a reputable site with low fees and a large number of positive user reviews over time.
 
 ## Exchanges
 
@@ -77,6 +78,8 @@ https://www.therocktrading.com/en/offers/PPCBTC
 
 https://bx.in.th/BTC/PPC/
 
+____________
+
 Each exchange comes with a variety of fees both in trading and withdrawals and user experience may vary.  As always, use strong passwords, 2FA, and cold storage as needed.
 
-Once you have made your purchase, you can withdraw your coins to the wallet you have chose.
+Once you have made your purchase, you can withdraw your coins to the wallet you have chosen.
