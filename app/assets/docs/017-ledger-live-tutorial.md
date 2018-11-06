@@ -25,3 +25,5 @@ This will open the menu where you can search for the asset account you would lik
 ![Adding Peercoin](../img/ledgerlive_select2.JPG)
 
 Click continue until everything is finalized and completed.  You now have the Peercoin app, and the account added to your Ledger product and wallet.  
+
+---
