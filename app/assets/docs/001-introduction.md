@@ -14,7 +14,7 @@ Since its first block in 2012, Peercoin has remained one of the most energy effe
 
 Once you install official Peercoin client from peercoin.net, you’ll have access to three executables: peercoind, peercoin-qt, and peercoin-cli.
 
-### Peercoin-qt
+### [Peercoin-qt](003-peercoin-core-wallet.md)
 
 `peercoin-qt` provides a combination full Peercoin network client and wallet. Peercoin-qt is highly portable application written in QT5 framework.
 From the Help menu, you can access a console where you can enter the RPC commands so power-user features are still available.
@@ -79,6 +79,7 @@ https://www.ledger.com/
 ### Magnum
 
 Airdrop focused wallet
+
 https://magnumwallet.co
 
 ### UberPay
