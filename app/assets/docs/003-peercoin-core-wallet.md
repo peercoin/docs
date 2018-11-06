@@ -8,6 +8,10 @@
 
 To install on Windows, you can find the download files here: https://peercoin.net/download.  Once download is complete, extract the contents of the folder.  Depending on if your system is x32 or x64 bits, choosing the relevant folder.  Run the peercoin-win_setup.exe and you will be guided through the installation process.  Once finishes, the client can be launched by running "peercoin-qt.exe" from the appropriate folder.
 
+### Mac Installation
+
+To install for MacOS, you can find the download files here: https://peercoin.net/download.  Once the download is complete, extract the contents of the folder.  Inside the extracted folder, double click the "Peercoin-Qt.dmg" file to open the client.
+
 ### Debian Installation
 
 As of April 2018, Peercoin has official Debian repository hosted at `repo.peercoin.net`.
@@ -15,10 +19,6 @@ Repository is serving .deb packages for latest Debian stable, for amd64 and armh
 
 Repository offers two packages, `peercoin-qt` which is official graphical client for the Peercoin network and `peercoind` which is a daemon client for the network.
 In the future repository may host other Peercoin-related packages.
-
-### Mac Installation
-
-To install for MacOS, you can find the download files here: https://peercoin.net/download.  Once the download is complete, extract the contents of the folder.  Inside the extracted folder, double click the "Peercoin-Qt.dmg" file to open the client.
 
 #### Adding the GPG key
 
