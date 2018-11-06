@@ -1,4 +1,4 @@
-# Peercoin Paper Wallet guide
+# Peercoin Paper Wallet Guide
 
 You can find the source code for this wallet here: https://github.com/peercoin/peercoin-address-generator/
 
@@ -20,15 +20,17 @@ To export the wallet, click the green share icon on the left side of the QR code
 
 ![Saving Options](../img/paperwallet_savingoptions.JPG)
 
--Save .txt locally
+*Save .txt locally
    *This option will download the wallet as a text file.*
--Copy address/priv. key to clipboard
+*Copy address/priv. key to clipboard
    *This option will copy the address/priv. key to a clipboard where it can be pasted.  Make sure your system is clean and secure before exposing this information to potential threats like keystroke loggers.*
--Send via email
+*Send via email
    *This option will allow you to send the wallet information via email.*
--Save JSON data will
+*Save JSON data will
    *This option will download the wallet information in JSON format.*
--Paper Wallet (print)
+*Paper Wallet (print)
    *This option will open a print dialogue from which the wallet can be printed or saved as a PDF.  Paper wallets provide physical security and backups for Peercoins that are to be left in cold storage.*
 
 This concludes the tutorial on the paper wallet generator.  This platform provides extra security for those who wish to keep their Peercoin in a safe and physical location.    
+
+_________________________________________
