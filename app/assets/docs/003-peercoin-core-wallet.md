@@ -65,7 +65,7 @@ The send tab is used to send Peercoin.  The "Pay To" section is where a target a
 
 ![Recieve Tab](../img/recieve.png)
 
-The Receive tab lists all wallet addresses attached to the Peercoin client.  Generating a new address is as simple as clicking the "New Address" button at the bottom of the screen.  The "Sign Message" button can also be used to verify ownership of a wallet.  [There is a tutorial on signing messages with the Peercoin client here.](012-SigningMessages.md)  The example addresses have been removed from the image for privacy sake.
+The Receive tab lists all wallet addresses attached to the Peercoin client.  Generating a new address is as simple as clicking the "New Address" button at the bottom of the screen.  The "Sign Message" button can also be used to verify ownership of a wallet.  [There is a tutorial on signing messages with the Peercoin client here.](014-SigningMessages.md)  The example addresses have been removed from the image for privacy sake.
 
 ### Transactions
 
@@ -92,6 +92,26 @@ Once minting occurs, the initial batch of coins will have their coin age reset, 
 Addresses is the final tab and displays the addresses saved to the Address Book from the Send tab.  This is handy for managing repeat use addresses such as exchanges.  The example address has been removed from the image for privacy sake.
 
 ____________
+
+## Creating a New Address
+
+Creating a new address is very simple.  Navigate to the "Receive" tab and select the "New Address" button.  A window with a "Label" and "Address" field will appear.  Enter the name you want in the "Label" field.  You will be able to change this later.  Leave the "Address" field blank.  Click "Ok" to continue.  If you have already encrypted your wallet, you will need to enter your wallet password.
+
+![New Address Window](../img/newaddress.png)
+
+![New Address Created](../img/newaddress2.png)
+
+You can see the new address now available.  If you want to change the name of the label of the address, double click the name and you will be able to enter a new one.
+
+_________________________________________
+
+## Sending Peercoin
+
+If you want to send Peercoin, navigate to the "Send" tab.  We are going to send some Peercoins to the address we created above.  This page has three fields: "Pay To", "Label", and "Amount".  Paste the address you want to send Peercoins to into the "Pay To" field.  Make sure to verify that this address is correct.  If you already have a label for this wallet, it will automatically fill in the "Label" field.  If not, you can write your own in and it will be saved in your address book (Under the "Address" tab).  In the amount field, insert the number of Peercoins you would like to send.  There is a drop down menu which allows you to determine if you want to send in denominations of "Peercoins", "MilliPeercoins", "MicroPeercoins".  Make sure that you have enough to pay for the transaction fee.  When everything is finalized, press the "Send" button to confirm the transaction.  You will be prompted to confirm the transaction and must enter your wallet password to verify the transaction.  Once this is completed, you can view the transaction under the "Transactions" tab.
+
+![Sending Peercoin](../img/sendingpeercoin.png)
+
+_________________________________________
 
 ## Using the multisig
 
