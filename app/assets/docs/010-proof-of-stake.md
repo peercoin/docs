@@ -1,4 +1,4 @@
-# Peercoin proof of stake
+# Proof-of-Stake
 
 >Peercoin uses both the Proof-of-Work and Proof-of-Stake algorithms. The PoW algorithm is used to spread the distribution of new coins. Up to 99% of all peercoins is created with POW. Proof-of-Stake is used to secure the network: The chain with longest POS coin age wins in case of a blockchain split-up.
 
