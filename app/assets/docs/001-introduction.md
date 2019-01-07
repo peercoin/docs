@@ -10,6 +10,6 @@ Since its first block in 2012, Peercoin has remained one of the most energy effe
 
 ## Peercoin University
 
-(University Summary here)
+[Peercoin university](https://university.peercoin.net/) is a community project aimed at less technical members of the community to grasp and understand the complex topic of public blockchain.
 
 ---
