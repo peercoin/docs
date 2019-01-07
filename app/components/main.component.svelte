@@ -2,7 +2,6 @@
   <Topbar ref:topbar on:mobilemenu="handleMobileMenu(event)" on:fontsize="handleFontSize(event)" />
   <Menu ref:menu on:mobilemenu="handleMobileMenu(event)" />
   <div class="body">
-    <div class="warn">Disclaimer:<br>This documentation is a work in progress. It isn't ready and shouldn't be shared with outsiders until the removal of this message. If you want to help build it, please <a href="https://github.com/peercoin/docs#peercoin-official-documentation-repository">click here</a>.</div>
     <div class="menu-swipper" ></div>
     <div class="doc-container font-{{fontSize}}" ref:docContainer>
       {{{ documentationHTML }}}
