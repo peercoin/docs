@@ -1,13 +1,15 @@
-# How to buy Peercoin
+# Purchase
+
+## How to buy Peercoin
 
 There are many ways to buy Peercoin, although it may depend on your previous exchange access or location.
 You should have a Peercoin wallet set up previously to making a purchase so that you have a place to store your Peercoin.
 
-## Fiat gateways
+### Fiat gateways
 
 In order to purchase Peercoin directly with a bank wire or debit card, there are several options for direct purchase, although these primarily support European wire transfers and purchases.  If you want to directly purchase with a card or bank transfer, you can use the following sites:
 
-### The Rock Trading
+#### The Rock Trading
 https://www.therocktrading.com/
 TheRockTrading offers SEPA direct deposits and offers Peercoin directly on the platform, while offering no trading fees on PPC.
 
@@ -15,27 +17,27 @@ TheRockTrading offers SEPA direct deposits and offers Peercoin directly on the p
 https://anycoindirect.eu/en/buy-peercoin
 Supports EUR
 
-### LiteBit
+#### LiteBit
 https://www.litebit.eu/en/buy/peercoin
 Supports EUR
 
-### Livecoin.net
+#### Livecoin.net
 https://www.livecoin.net/
 Supports both USD/RUR/EUR deposits
 
 If you are in the US, the above websites may not be available.  You must use an exchange that accepts you must buy a cryptocurrency like Bitcoin and transfer it to an exchange that lists Peercoin, which will be discussed at a later time.
 
-### Coinbase
+#### Coinbase
 
 https://coinbase.com
 CoinBase is one of the most popular broker sites and is arguably the most commonly used for US based citizens.
 
-### Gemini
+#### Gemini
 
 https://gemini.com
 Gemini also offers fiat purchasing options for Bitcoin with bank wire options.
 
-### OkCoin
+#### OkCoin
 
 https://www.okcoin.com/lang/en-US/
 Offers fiat deposits by wire to buy Bitcoin and other common coins.
@@ -44,37 +46,37 @@ It is strongly recommended to purchase Bitcoin as it has the most traded pairs f
 
 There are other websites that can be used to buy Bitcoin with a debit or credit card, and there are a plethora of guides available on these sites.  We suggest you find a reputable site with low fees and a large number of positive user reviews over time.
 
-# Exchanges
+## Exchanges
 
 If you already own cryptocurrency, the section about fiat gateways can be skipped since you most likely already have one.  Below is a list of exchanges which support Peercoin and where it can be traded actively.  Send your coins there and you will be able to purchase Peercoin.
 
-## PPC/BTC Pairs
+### PPC/BTC Pairs
 
-### Bittrex
+#### Bittrex
 
 https://bittrex.com/Market/Index?MarketName=BTC-PPC
 
-### Cryptopia
+#### Cryptopia
 
 https://www.cryptopia.co.nz/Exchange?market=PPC_BTC
 
-### HitBTC
+#### HitBTC
 
 https://hitbtc.com/PPC-to-BTC
 
-### Livecoin
+#### Livecoin
 
 https://www.livecoin.net/
 
-### Poloniex
+#### Poloniex
 
 https://poloniex.com/exchange#btc_ppc
 
-### The Rock Trading
+#### The Rock Trading
 
 https://www.therocktrading.com/en/offers/PPCBTC
 
-### Tux Exchange
+#### Tux Exchange
 
 https://bx.in.th/BTC/PPC/
 

@@ -18,6 +18,6 @@ If you want to calculate the profitability of mining Peercoin, you can use this 
 
 ## Mining Confirmations
 
- Once a block has been mined, 520 blocks must be passed for the mining to be confirmed. This is roughly 3.61 days of time.
+Once a block has been mined, 520 blocks must be passed for the mining to be confirmed. This is roughly 3.61 days of time.
 
 ---
