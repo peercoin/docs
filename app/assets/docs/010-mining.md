@@ -2,7 +2,7 @@
 
 >Peercoin uses both the Proof-of-Work and Proof-of-Stake algorithms. The PoW algorithm is used to spread the distribution of new coins. Up to 99% of all peercoins is created with PoW. Proof-of-Stake is used to secure the network: The chain with longest PoS coin age wins in case of a blockchain split-up.
 
-Peercoin uses the hashcash double iterated SHA-256 algorithm for [Proof-of-Work mining](https://en.bitcoin.it/wiki/Proof_of_work). This means anything that any hardware that can mine Bitcoin can mine Peercoin as well.
+Peercoin uses the hashcash double iterated SHA-256 algorithm for [Proof-of-Work mining](https://en.bitcoin.it/wiki/Proof_of_work). This means that any hardware that can mine Bitcoin can mine Peercoin as well.
 
 To mine Peercoin, you need a mining software. Below is a list that is not official endorsed but have been found to have a decent reputation.
 
