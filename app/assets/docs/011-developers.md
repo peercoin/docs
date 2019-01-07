@@ -1,6 +1,8 @@
-# Compiling
+# Developers
 
-## Compiling packages for Debian and Ubuntu
+## Compiling
+
+### Compiling packages for Debian and Ubuntu
 
 As Peercoin is made to run on range of platforms, from Amazon's server to low powered Raspberry Pi Debian is perfect OS platform for deploying Peercoin nodes as it is renowned for multitude of supported hardware architectures as well as security and stability.
 
@@ -8,7 +10,7 @@ For compilation of Debian packages we will be using `pbuilder` which is a automa
 
 The following tutorial is written for the Ubuntu or Debian host, precisely Ubuntu 17.10 which is last stable version of Ubuntu at the time of writing.
 
-## Prepare the tooling
+### Prepare the tooling
 
 `sudo apt install pbuilder qemu-user-static ubuntu-keyring debian-archive-keyring`
 
@@ -103,7 +105,7 @@ Debian stable:
 
 > sudo OS=debian DIST=stretch ARCH=amd64 pbuilder --create
 
-## Preparing for build
+### Preparing for build
 
 (compiling for Raspbian stretch in this example)
 
@@ -121,13 +123,13 @@ Copy the debian directory from the contrib to this directory:
 
 `cp -r contrib/debian .`
 
-### Some modifications
+#### Some modifications
 
 (this is just an extra step required for the Raspbian, to fix problem with autotools)
 
 `sed '/./configure --with-gui=qt5 --with-incompatible-bdb/s/$/ --with-boost-libdir=/usr/lib/arm-linux-gnueabihf/' debian/rules`
 
-## Building the package
+### Building the package
 
 `OS=raspbian DIST=stretch ARCH=armhf pdebuild`
 
@@ -137,11 +139,11 @@ The concept of pbuild and cross-platform compilations is that you pass it this e
 
 For example OS=debian and DIST=wheezy will use Debian Wheezy chroot, you can also pick architecture by using ARCH= environment variable.
 
-## Footnotes
+### Footnotes
 
 <a id="footnote-3.1">3.1</a>: https://jodal.no/2015/03/08/building-arm-debs-with-pbuilder/
 
-# JSON-RPC API reference
+## JSON-RPC API reference
 
 Peercoin daemon offers JSON-RPC interface which can be used to control the daemon or integrate it with software stack.
 You can send commands to the daemon by using `peercoin-cli` tool.
@@ -156,7 +158,7 @@ https://github.com/peercoin/peercoin_rpc
 
 https://github.com/peercoin/peercoin-php-rpc
 
-## List of JSON-RPC calls
+### List of JSON-RPC calls
 
 | Command            | Parameters  | Description    | Requires unlocked wallet? (yes/no)  |
 |--------------------|-------------|---------------------------------|--------------------|
@@ -200,13 +202,13 @@ https://github.com/peercoin/peercoin-php-rpc
 | `listlockunspent`     |        |Returns list of temporarily unspendable outputs.|no|
 | `createmultisig`      | `nrequired` `["key,"key"]`|Creates a multi-signature address and returns a json object.|yes|
 
-# Peercoin Developer Notes
+## Peercoin Developer Notes
 
 Constants that may be useful when looking to integrate / develop with Peercoin.
 
 Peercoin source code repository: github.com/peercoin/peercoin
 
-## Mainnet
+### Mainnet
 
 | Attribute | Value |
 |-----------|-------|
@@ -222,7 +224,7 @@ Peercoin source code repository: github.com/peercoin/peercoin
 | Genesis tx hash bytes |  \xc2\x93\x59\x2c\x05\x90\x56\x98\x29\x0c\x89\xeb\x6d\xde\xf0\xcf\x8a\xa5\xa1\x48\xc6\x8c\x55\xac\x7a\xd1\xb4\xfa\x85\x8f\x2d\x3c |
 | Default port | 9901 |
 
-## Testnet
+### Testnet
 
 | Attribute | Value |
 |-----------|-------|
@@ -238,9 +240,9 @@ Peercoin source code repository: github.com/peercoin/peercoin
 | Genesis tx hash bytes |  \xc2\x93\x59\x2c\x05\x90\x56\x98\x29\x0c\x89\xeb\x6d\xde\xf0\xcf\x8a\xa5\xa1\x48\xc6\x8c\x55\xac\x7a\xd1\xb4\xfa\x85\x8f\x2d\x3c |
 | Default port | 9903 |
 
-# Bootstrapping
+## Bootstrapping
 
-## What is it?
+### What is it?
 
 > In computer technology the term (usually shortened to booting) usually
 > refers to the process of loading the basic software into the memory of
@@ -254,7 +256,7 @@ This special file, named `bootstrap.dat`, allows the Peercoin client to
 sync from your hard drive instead of the internet. Using a
 `bootstrap.dat` file is faster and reduces stress on the Peercoin network to sync new nodes.
 
-## How do I make a `bootstrap.dat`?
+### How do I make a `bootstrap.dat`?
 
 Any synced client has the ability to make a `bootstrap.dat` file. Assuming
 you're running linux you can do the following to manufacture your own.
@@ -289,7 +291,7 @@ On linux and OS X you can create hash of the bootstrap:
 
 > sha256 bootstrap.dat
 
-## How do I use a `bootstrap.dat`?
+### How do I use a `bootstrap.dat`?
 
 Assuming you're on linux and you haven't started the Peercoin client before.
 
@@ -299,7 +301,7 @@ Make the directory `~/.peercoin` if it doesn't exist and then move the
 Start the Peercoin client. You should see the status `Importing blocks from disk...` if the client has found the `bootstrap.dat` and is using it to
 sync the block chain.
 
-## Where can I download a `bootstrap.dat`?
+### Where can I download a `bootstrap.dat`?
 
 We've put some recent copies on our [file server](https://files.peercoin.net) :)
 
@@ -308,7 +310,7 @@ We've put some recent copies on our [file server](https://files.peercoin.net) :)
 * [Testnet bootstrap.dat.zip](https://files.peercoin.net/download/peercoin_testnet_2018_08_06_bootstrap.dat.zip) SHA256 `1312aaaf0d8466b6f7006bac60a5cad4daf36e1241f791924e45bc5959ff2452` | [torrent](https://files.peercoin.net/download/peercoin_testnet_2018_08_06_bootstrap.dat.zip.torrent) | [magnet](magnet:?xt=urn:btih:c70afb5100953362b45df75133e01bf1f9466e04&dn=peercoin%5Ftestnet%5F2018%5F08%5F06%5Fbootstrap.dat.zip&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.ilibr.org%3A80%2Fannounce&tr=http%3A%2F%2Fatrack.pow7.com%2Fannounce&tr=http%3A%2F%2Fbt.henbt.com%3A2710%2Fannounce&tr=http%3A%2F%2Fmgtracker.org%3A2710%2Fannounce&tr=http%3A%2F%2Fmgtracker.org%3A6969%2Fannounce&tr=http%3A%2F%2Fopen.touki.ru%2Fannounce.php&tr=http%3A%2F%2Fp4p.arenabg.ch%3A1337%2Fannounce&tr=http%3A%2F%2Fpow7.com%3A80%2Fannounce&tr=http%3A%2F%2Fretracker.krs-ix.ru%3A80%2Fannounce)
 * [Testnet bootstrap.dat.tar.gz](https://files.peercoin.net/download/peercoin_testnet_2018_08_06_bootstrap.dat.tar.gz) SHA256 `15f0e40a7e99083b2ed27c78d37d0f201fd6c744537cf643925d0aae84395896` | [torrent](https://files.peercoin.net/download/peercoin_testnet_2018_08_06_bootstrap.dat.tar.gz.torrent) | [magnet](magnet:?xt=urn:btih:eb2a70e90285ca847be47b2f96e36e5cdec4580e&dn=peercoin%5Ftestnet%5F2018%5F08%5F06%5Fbootstrap.dat.tar.gz&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.ilibr.org%3A80%2Fannounce&tr=http%3A%2F%2Fatrack.pow7.com%2Fannounce&tr=http%3A%2F%2Fbt.henbt.com%3A2710%2Fannounce&tr=http%3A%2F%2Fmgtracker.org%3A2710%2Fannounce&tr=http%3A%2F%2Fmgtracker.org%3A6969%2Fannounce&tr=http%3A%2F%2Fopen.touki.ru%2Fannounce.php&tr=http%3A%2F%2Fp4p.arenabg.ch%3A1337%2Fannounce&tr=http%3A%2F%2Fpow7.com%3A80%2Fannounce&tr=http%3A%2F%2Fretracker.krs-ix.ru%3A80%2Fannounce)
 
-## Footnotes
+### Footnotes
 
 <a id="footnote-9.1">9.1</a>: https://en.wikipedia.org/wiki/Bootstrapping
 

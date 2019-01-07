@@ -1,8 +1,8 @@
-# Graphics
+## Graphics
 
 A variety of Peercoin graphics are available here: https://github.com/peercoin/media/tree/master/Peercoin%202018%20Logo%20Files
 
-# Brand Identity
+## Brand Identity
 
 Please use these color codes on your Peercoin related websites whenever possible. This will help us keep the Peercoin ecosystem and its branding and visuals consistent.
 
