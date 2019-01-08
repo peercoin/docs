@@ -407,7 +407,7 @@ What do you need:
 * an SD card (4GB +)
 * some spare time
 
-Download the image from files.peercoin.net, use the [Etcher](http://etcher.io/) to load it to the SD card.
+Download the image from [files.peercoin.net](files.peercoin.net), use the [Etcher](http://etcher.io/) to load it to the SD card.
 
 Now follow the guide: https://www.stakebox.org/blogs/learn/getting-started-with-peercoin-stakebox.
 
