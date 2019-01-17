@@ -80,8 +80,6 @@ https://www.therocktrading.com/en/offers/PPCBTC
 
 https://bx.in.th/BTC/PPC/
 
-____________
-
 Each exchange comes with a variety of fees both in trading and withdrawals and user experience may vary.  As always, use strong passwords, 2FA, and cold storage as needed.
 
 Once you have made your purchase, you can withdraw your coins to the wallet you have chosen.
