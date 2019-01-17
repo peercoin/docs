@@ -1,3 +1,5 @@
+# Marketing
+
 ## Graphics
 
 A variety of Peercoin graphics are available here: https://github.com/peercoin/media/tree/master/Peercoin%202018%20Logo%20Files

@@ -13,7 +13,7 @@ From the Help menu, you can access a console where you can enter the RPC command
 
 `peercoind` provides a full peer which you can interact with through JSON-RPC interface on port 9904 (902 for testnet).
 
-For more information on how to use the JSON-RPC interface see the [json-rcp-api-reference article](./006-json-rpc-api-reference.md)
+For more information on how to use the JSON-RPC interface see the [developer documents](./011-developers.md)
 
 ### peercoin-cli
 
@@ -48,7 +48,7 @@ On Linux, Mac OSX, and other Unix-like systems, this can be accomplished by runn
 
 ### Windows Installation
 
-To install on Windows, you can find the download files here: https://peercoin.net/download.  Once download is complete, extract the contents of the folder.  Depending on if your system is x32 or x64 bits, choosing the relevant folder.  Run the peercoin-win_setup.exe and you will be guided through the installation process.  Once finishes, the client can be launched by running "peercoin-qt.exe" from the appropriate folder.
+To install on Windows, you can find the download files here: https://peercoin.net/wallet.html.  Once download is complete, extract the contents of the folder.  Depending on if your system is x32 or x64 bits, choosing the relevant folder.  Run the peercoin-win_setup.exe and you will be guided through the installation process.  Once finishes, the client can be launched by running "peercoin-qt.exe" from the appropriate folder.
 
 ### Debian Installation
 
@@ -59,7 +59,7 @@ In the future repository may host other Peercoin-related packages.
 
 ### Mac Installation
 
-To install for MacOS, you can find the download files here: https://peercoin.net/download.  Once the download is complete, extract the contents of the folder.  Inside the extracted folder, double click the "Peercoin-Qt.dmg" file to open the client.
+To install for MacOS, you can find the download files here: https://peercoin.net/wallet.html.  Once the download is complete, extract the contents of the folder.  Inside the extracted folder, double click the "Peercoin-Qt.dmg" file to open the client.
 
 #### Adding the GPG key
 
@@ -77,7 +77,7 @@ To install for MacOS, you can find the download files here: https://peercoin.net
 
 ### Debian/Ubuntu Package Compilation Guide
 
-If you want a more in-depth guide on the compilation of the client for a variety of systems, [more can be found here](004-compiling-packages-for-debian.md)
+If you want a more in-depth guide on the compilation of the client for a variety of systems, [more can be found here](011-developers.md)
 ____________
 
 ## General Notes
@@ -106,7 +106,7 @@ The send tab is used to send Peercoin.  The "Pay To" section is where a target a
 
 ![Recieve Tab](../img/recieve.png)
 
-The Receive tab lists all wallet addresses attached to the Peercoin client.  Generating a new address is as simple as clicking the "New Address" button at the bottom of the screen.  The "Sign Message" button can also be used to verify ownership of a wallet.  [There is a tutorial on signing messages with the Peercoin client here.](014-SigningMessages.md)  The example addresses have been removed from the image for privacy sake.
+The Receive tab lists all wallet addresses attached to the Peercoin client.  Generating a new address is as simple as clicking the "New Address" button at the bottom of the screen.  The "Sign Message" button can also be used to verify ownership of a wallet.  [There is a tutorial on signing messages with the Peercoin client here.](https://docs.peercoin.net/#/how-to-sign-a-message-using-the-peercoin-client)  The example addresses have been removed from the image for privacy sake.
 
 ### Transactions
 
@@ -358,7 +358,7 @@ sendrawtransaction "0100000062815a5301749fb9a1434c1072fb67f928f3b5592de88053bccf
 
 ## How To Sign a Message Using the Peercoin Client
 
-First, check that the address you want to use is loaded up into the wallet of your Peercoin client.  You can use the standard client found [here](https://peercoin.net/download).  The list of your addresses can be found using the receive tab.
+First, check that the address you want to use is loaded up into the wallet of your Peercoin client.  You can use the standard client.  The list of your addresses can be found using the receive tab.
 
 ![1](https://talk.peercoin.net/uploads/default/original/2X/3/3a72b5afa078a4d7b24cfaa7e2a5a303014ec6c6.jpeg)
 
@@ -409,7 +409,7 @@ What do you need:
 * an SD card (4GB +)
 * some spare time
 
-Download the image from files.peercoin.net, use the [Etcher](http://etcher.io/) to load it to the SD card.
+Download the image from [files.peercoin.net](https://files.peercoin.net/), use the [Etcher](http://etcher.io/) to load it to the SD card.
 
 Now follow the guide: https://www.stakebox.org/blogs/learn/getting-started-with-peercoin-stakebox.
 

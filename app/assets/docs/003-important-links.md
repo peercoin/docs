@@ -4,7 +4,7 @@
 
 - [Peercoin.net](https://peercoin.net/)
 - [GitHub](https://github.com/peercoin/)
-- [Foundation](https://peercoin.net/foundation.html/)
+- [Foundation](https://peercoin.net/foundation.html)
 
 ## Forums
 
