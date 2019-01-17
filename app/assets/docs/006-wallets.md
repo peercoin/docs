@@ -413,6 +413,8 @@ Download the image from [files.peercoin.net](https://files.peercoin.net/), use t
 
 Now follow the guide: https://www.stakebox.org/blogs/learn/getting-started-with-peercoin-stakebox.
 
+__________________________
+
 ### Ledger Peercoin Tutorial
 
 #### Ledger Live

@@ -223,6 +223,8 @@ Peercoin source code repository: github.com/peercoin/peercoin
 | Genesis tx hash hex | 3c2d8f85fab4d17aac558cc648a1a58acff0de6deb890c29985690052c5993c2 |
 | Genesis tx hash bytes |  \xc2\x93\x59\x2c\x05\x90\x56\x98\x29\x0c\x89\xeb\x6d\xde\xf0\xcf\x8a\xa5\xa1\x48\xc6\x8c\x55\xac\x7a\xd1\xb4\xfa\x85\x8f\x2d\x3c |
 | Default port | 9901 |
+| Default RPC port | 9902 |
+| BIP44 coin type| 0x80000006 |
 
 ### Testnet
 
@@ -239,6 +241,8 @@ Peercoin source code repository: github.com/peercoin/peercoin
 | Genesis tx hash hex | 3c2d8f85fab4d17aac558cc648a1a58acff0de6deb890c29985690052c5993c2 |
 | Genesis tx hash bytes |  \xc2\x93\x59\x2c\x05\x90\x56\x98\x29\x0c\x89\xeb\x6d\xde\xf0\xcf\x8a\xa5\xa1\x48\xc6\x8c\x55\xac\x7a\xd1\xb4\xfa\x85\x8f\x2d\x3c |
 | Default port | 9903 |
+| Default RPC port | 9904 |
+| BIP44 coin type| 0x80000006 |
 
 ## Bootstrapping
 
