@@ -14,15 +14,17 @@ where:
 ## v0.6
 
 > released: 25.10.2017
+
 > type: softfork
 
  - BIP34: block height in coinbase
- - OP_CHECKLOCKTIMEVERIFY
+ - BIP65: OP_CHECKLOCKTIMEVERIFY
 
 
 ## v0.7
 
 > relased: 22.01.2019
+
 > type: hardfork
 
 * [rfc-0007](https://github.com/peercoin/rfcs/blob/master/text/0007-round-transaction-fees-up-to-0.001/0007-round-transaction-fees-up-to-0.001.md)
