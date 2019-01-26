@@ -37,7 +37,7 @@ While for PoS, the time advantage is negligible as you can still use the stake h
 ## Block size limit and block time spacing
 
 Bitcoin features the 1MB block size limits which serves to place the upward pressure on the transaction fee price, Peercoin copies this parameter from the Bitcoin but it's economic model does not depend on scarcity of the block space.
-Bitcoin and Peercoin generate a block every 10 minutes while Ethereum generates a block every 12 seconds. Considering this and the block size limit of 1MB, Bitcoin and Peercoin have a transaction per second (TPS) of about seven tps and Ethereum of about 25 tps.
+While block generation is a stochastic process, each chain is targeted to generate blocks based on a real time interval. Bitcoin generates a block every 10 minutes, while Peercoin generates a PoS block every 10 minutes and a PoW block every 60 minutes, for an average of 8.57 minutes. Ethereum generates a block every 12 seconds. Considering this and the block size limit of 1MB, Bitcoin has a transaction per second (TPS) of about 7 tps, Peercoin has about 8 tps, and Ethereum has about 25 tps.
 
 <table>
 <thead>
@@ -90,13 +90,13 @@ Bitcoin and Peercoin generate a block every 10 minutes while Ethereum generates 
 <tr>
 <td>Estimated transaction bandwidth:</td>
 <td>7 tx/sec</td>
-<td>7 tx/sec</td>
+<td>8 tx/sec</td>
 <td>25 tx/sec</td>
 </tr>
 <tr>
 <td>Block time:</td>
 <td>10 minutes</td>
-<td>10 minutes</td>
+<td>8.57 minutes</td>
 <td>12 seconds</td>
 </tr>
 <tr>
