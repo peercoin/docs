@@ -244,6 +244,20 @@ Peercoin source code repository: github.com/peercoin/peercoin
 | Default RPC port | 9904 |
 | BIP44 coin type| 0x80000006 |
 
+## Transaction format
+
+Peercoin transaction format is indendical to a Bitcoin transaction format with the exception of included transaction timestamp.
+
+| Property | Description | Bytes |
+|----------|-------------|-------|
+| Version  | transaction version number | 4 |
+| Timestamp | transaction timestamp | 4 |
+| Input-counter | number of transaction inputs | 1-9 |
+| List of inputs | list of transaction inputs | varies |
+| Output-counter | number of transaction outputs | 1-9 |
+| List of outputs | list of transaction outputs | varies |
+| Locktime | block number or Unix timestamp when the transaction finalizes | 4 |
+
 ## Bootstrapping
 
 ### What is it?
