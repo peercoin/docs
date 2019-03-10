@@ -280,6 +280,8 @@
             color: $color-green-dark;
             padding: 0.1rem 0.5rem;
             border-radius: 3px;
+            display: inline-block;
+            word-break: keep-all;
           }
         }
       }      
