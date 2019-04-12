@@ -225,6 +225,7 @@ Peercoin source code repository: github.com/peercoin/peercoin
 | Default port | 9901 |
 | Default RPC port | 9902 |
 | BIP44 coin type| 0x80000006 |
+| bech32 prefix | pc |
 
 ### Testnet
 
@@ -243,6 +244,7 @@ Peercoin source code repository: github.com/peercoin/peercoin
 | Default port | 9903 |
 | Default RPC port | 9904 |
 | BIP44 coin type| 0x80000006 |
+| bech32 prefix | tpc |
 
 ## Transaction format
 
