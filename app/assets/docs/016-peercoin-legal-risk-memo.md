@@ -40,7 +40,7 @@ source Peercoin community or other events exogenous to our efforts.
 Pseudonymous users created Peercoin and like Bitcoin, the identity of the person(s) who started Peercoin is uknown. It is a community based project of which its success depends on the community, of which anyone can join.
 Thus, the Peercoin would likely not satisfy the final prong of Howey.
 
-# Conclusion
+## Conclusion
 
 Since there was never an initial coin offering or token sale with the expectation of profit derived from others, Peercoin likely fails the Howey test and therefore does
 not constitute a security.
