@@ -108,7 +108,7 @@ While block generation is a stochastic process, each chain is targeted to genera
 <tr>
 <td>Extra transaction data size limit:</td>
 <td>80 Byte<br />(OP_RETURN)</td>
-<td>80 Byte<br />(OP_RETURN)</td>
+<td>256 Byte<br />(OP_RETURN)</td>
 <td>Dynamic<br />(5 gas / byte)</td>
 </tr>
 <tr>
