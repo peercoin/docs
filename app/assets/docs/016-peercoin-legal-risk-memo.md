@@ -19,8 +19,8 @@ There was never an investment of funds to launch Peercoin such as a token sale o
 
 The Peercoin Foundation was legally established in 2017 by the Peercoin community, approximately 5 years after the Peercoin Network was launched.
 The Peercoin Network did not require pooling of assets and the Peercoin Foundation did not accept any bitcoin, ethers, virtual currency or fiat currency in
-an initial coin offering, token sale or pre-mine. The purpose of the Peercoin Foundation is to advance the Peercoin project.
-The Foundation does not require anyone to send funds to us nor the Peercoin Network. Specifically, the Network handles Peercoin transactions, balances and issuance through a hybrid SHA-256 proof-of-work scheme and proof-of-stake system designed to address vulnerabilities that could occur in a pure proof-of-work system. No one party conrols the peer to peer Peercoin blockchain network or the Hybrid Algorithm.
+an initial coin offering, token sale or premine. The purpose of the Peercoin Foundation is to advance the Peercoin project.
+The Foundation does not require anyone to send funds to us nor the Peercoin Network. Specifically, the Network handles Peercoin transactions, balances and issuance through a hybrid SHA-256 proof-of-work scheme and proof-of-stake system designed to address vulnerabilities that could occur in a pure proof-of-work system. No one party controls the peer to peer Peercoin blockchain network or the Hybrid Algorithm.
 
 The eventual success of the Peercoin project depends on the open-source Peercoin community. Specifically, horizontal commonality likely does not exist because the Peercoin project existed before the Foundation was established and the Network has been sufficiently decentralized for some time. Anyone can run the Hybrid Algorithm to secure the Network. In addition the Foundation does not take custody of any funds belonging to any Peercoin user or the Network.
 Vertical commonality likely does not exist because the Peercoin Foundation contributions are under the open source MIT License and the Network/Peercoin community are not bound to the Foundation’s efforts.
@@ -37,7 +37,7 @@ Peercoin and the Network existed without an issuer or promoter receiving capital
 
 While it is possible for investors to speculate on the market rate of Peercoin, any profit derived from market speculation is based on the success of the open
 source Peercoin community or other events exogenous to our efforts.
-Pseudonymous users created Peercoin and like Bitcoin, the identity of the person(s) who started Peercoin is uknown. It is a community based project of which its success depends on the community, of which anyone can join.
+Pseudonymous users created Peercoin and like Bitcoin, the identity of the person(s) who started Peercoin is unknown. It is a community based project of which its success depends on the community, of which anyone can join.
 Thus, the Peercoin would likely not satisfy the final prong of Howey.
 
 ## Conclusion
