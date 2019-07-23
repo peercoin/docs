@@ -68,17 +68,9 @@ https://hitbtc.com/PPC-to-BTC
 
 https://www.livecoin.net/
 
-#### Poloniex
-
-https://poloniex.com/exchange#btc_ppc
-
 #### The Rock Trading
 
 https://www.therocktrading.com/en/offers/PPCBTC
-
-#### Tux Exchange
-
-https://bx.in.th/BTC/PPC/
 
 Each exchange comes with a variety of fees both in trading and withdrawals and user experience may vary.  As always, use strong passwords, 2FA, and cold storage as needed.
 
