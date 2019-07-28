@@ -29,3 +29,16 @@ where:
 
 * [rfc-0007](https://github.com/peercoin/rfcs/blob/master/text/0007-round-transaction-fees-up-to-0.001/0007-round-transaction-fees-up-to-0.001.md)
 * [rfc-0008](https://github.com/peercoin/rfcs/blob/master/text/0008-increase-op-return-size-limit/0008-increase-op-return-size-limit.md)
+
+
+## v0.8
+
+> relased: 29.07.2019
+
+> type: hardfork
+
+* rebase to bitcoin-core 0.16.3
+* Compact blocks support (BIP152) with upgraded protocol version to 70015
+* HD wallet support (BIP32)
+* [rfc-0006](https://github.com/peercoin/rfcs/blob/master/text/0006-remove-pow-block-signature/0006-remove-pow-block-signature.md)
+* mainnet fork is scheduled for 1st of October 2019, activating BIPS 62, 68, 112, 113 and 141
