@@ -97,9 +97,13 @@ Make the directory where pbuilder will place the packages:
 
 ### Bootstrap the chroots
 
-Raspbian:
+Raspbian (stretch):
 
 > sudo OS=raspbian DIST=stretch ARCH=armhf pbuilder --create
+
+Raspbian (buster):
+
+> sudo OS=raspbian DIST=buster ARCH=armhf pbuilder --create
 
 Debian stable:
 
