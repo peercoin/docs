@@ -11,7 +11,7 @@ From the Help menu, you can access a console where you can enter the RPC command
 
 ### peercoind
 
-`peercoind` provides a full peer which you can interact with through JSON-RPC interface on port 9904 (902 for testnet).
+`peercoind` provides a full peer which you can interact with through JSON-RPC interface on port 9902 (9904 for testnet).
 
 For more information on how to use the JSON-RPC interface see the [developer documents](https://docs.peercoin.net/#/developers)
 
