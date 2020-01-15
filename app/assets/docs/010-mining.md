@@ -12,6 +12,16 @@ To mine Peercoin, you need a mining software. Below is a list that is not offici
 
 There are others, but this list can be used as a starting place.  Each will request pool or solo information and should come with the related support.
 
+## Peercoin Mining Pools
+
+Peercoin network hashrate is too high to expect that solo-mining will work. It is recommended to join a mining pool.
+You can find the list of mining pools at the following websites:
+
+* [WhereToMine](https://wheretomine.io/coins/peercoin/)
+* [MiningPoolStats](https://miningpoolstats.stream/peercoin)
+
+Both lists are not verified or vetted, please do your own research before joining some pool.
+
 ## Peercoin Mining Profitability
 
 If you want to calculate the profitability of mining Peercoin, you can use this website: https://www.coinwarz.com/calculators/peercoin-mining-calculator
