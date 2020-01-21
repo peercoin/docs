@@ -9,6 +9,8 @@ You should have a Peercoin wallet set up previously to making a purchase so that
 
 In order to purchase Peercoin directly with a bank wire or debit card, there are several options for direct purchase, although these primarily support European wire transfers and purchases.  If you want to directly purchase with a card or bank transfer, you can use the following sites:
 
+> The list bellow is not regularly updated, to see the most recent data please visit: https://coinmarketcap.com/currencies/peercoin/markets/reported/
+
 #### The Rock Trading
 https://www.therocktrading.com/
 TheRockTrading offers SEPA direct deposits and offers Peercoin directly on the platform, while offering no trading fees on PPC.
@@ -52,13 +54,11 @@ If you already own cryptocurrency, the section about fiat gateways can be skippe
 
 ### PPC/BTC Pairs
 
+> The list bellow is not regularly updated, to see the most recent data please visit: https://coinmarketcap.com/currencies/peercoin/markets/reported/
+
 #### Bittrex
 
 https://bittrex.com/Market/Index?MarketName=BTC-PPC
-
-#### Cryptopia
-
-https://www.cryptopia.co.nz/Exchange?market=PPC_BTC
 
 #### HitBTC
 
