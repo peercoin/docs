@@ -16,7 +16,7 @@
     "hammerjs": "^2.0.8",
     "install": "^0.10.1",
     "marked": "^0.3.19",
-    "npm": "^4.5.0",
+    "npm": "^6.13.7",
     "prismjs": "^1.6.0"
   },
   "devDependencies": {
