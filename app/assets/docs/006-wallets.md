@@ -50,24 +50,22 @@ On Linux, Mac OSX, and other Unix-like systems, this can be accomplished by runn
 
 To install on Windows, you can find the download files here: https://peercoin.net/wallet.html.  Once download is complete, extract the contents of the folder.  Depending on if your system is x32 or x64 bits, choosing the relevant folder.  Run the peercoin-win_setup.exe and you will be guided through the installation process.  Once finishes, the client can be launched by running "peercoin-qt.exe" from the appropriate folder.
 
-### Debian Installation
-
-As of April 2018, Peercoin has official Debian repository hosted at `repo.peercoin.net`.
-Repository is serving .deb packages for latest Debian stable, for amd64 and armhf hardware architectures.
-Repository offers two packages, `peercoin-qt` which is official graphical client for the Peercoin network and `peercoind` which is a daemon client for the network.
-In the future repository may host other Peercoin-related packages.
-
 ### Mac Installation
 
 To install for MacOS, you can find the download files here: https://peercoin.net/wallet.html.  Once the download is complete, extract the contents of the folder.  Inside the extracted folder, double click the "Peercoin-Qt.dmg" file to open the client.
 
+### Debian Installation
+
+As of April 2018, Peercoin has official Debian repository hosted at https://peercoin.github.io/deb-repo/.
+Repository is serving .deb packages for latest Debian stable, for amd64, arm64 and armhf hardware architectures.
+
 #### Adding the GPG key
 
-`wget -O - https://repo.peercoin.net/peercoin.gpg.key | sudo apt-key add -`
+`wget -O - https://peercoin.github.io/deb-repo/peercoin.apt.key | sudo apt-key add -`
 
 #### Adding the repository in the sources
 
-`sudo sh -c "echo 'deb http://repo.peercoin.net stretch main' >> /etc/apt/sources.list.d/peercoin.list"`
+`sudo sh -c "echo 'deb https://peercoin.github.io/deb-repo/ buster main' >> /etc/apt/sources.list.d/peercoin.list"`
 
 `sudo apt update`
 
