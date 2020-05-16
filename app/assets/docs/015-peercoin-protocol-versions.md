@@ -42,3 +42,16 @@ where:
 * HD wallet support (BIP32)
 * [rfc-0006](https://github.com/peercoin/rfcs/blob/master/text/0006-remove-pow-block-signature/0006-remove-pow-block-signature.md)
 * mainnet fork is scheduled for 1st of October 2019, activating BIPS 62, 68, 112, 113 and 141
+
+## v0.9
+
+> released: 15.05.2020
+
+> type: hardfork
+
+* [RFC-0019](https://github.com/peercoin/rfcs/blob/master/text/0019-pow-block-spacing/0019-pow-block-spacing.md): PoW Block Spacing
+* [RFC-0018](https://github.com/peercoin/rfcs/blob/master/text/0018-pos-reward/0018-pos-reward.md): PoS Rewards Adjustment
+* [RFC-0017](https://github.com/peercoin/rfcs/blob/master/text/0017-coinage-limit/0017-coinage-limit.md): Limit Effective Coinage to One Year
+* [RFC-0015](https://github.com/peercoin/rfcs/blob/master/text/0015-time-drift/0015-time-drift.md): Reduce Time Drift
+* allow staking=0 command to disable minting (nominting=0 also works)
+* ability to filter out mint transactions in the QT wallet
