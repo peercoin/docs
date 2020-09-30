@@ -27,7 +27,7 @@ The win in proof-of-stake minting, the calculated hash is compared to the curren
 * Whenever this PoS difficulty is higher than the current network PoS difficulty your Peercoin client can mint a PoS block.
 * PoS blocks can be rejected (orphans) if several people mint a PoS block within a given window (2 hours also called timedrift). Only one (the chain with longest coin age) will be accepted.
 * Minting splits the transaction in two if coin age < 90 days.
-* PoS block reward is 1% annually. This 1% is a factor of your coin age, and is not maxed out.
+* PoS block reward is 3% + 0.25 PPC per solved block. See RFC0018 for more details [RFC0018](https://github.com/peercoin/rfcs/blob/master/text/0018-pos-reward/0018-pos-reward.md#detailed-design)
 * A transaction that just staked has its coins locked for 520 confirmations (3-4 days).
 * Merging transactions, spending coins, etc. burns coinage (resets it to 0).
 * The PoS reward is directly added to your transaction which staked (if this transaction is split in two because coinage < 90 days, the reward is equally distributed to both resulting transactions).
