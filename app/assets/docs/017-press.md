@@ -1,6 +1,7 @@
 # Press Mentions
 
 * [30-JAN-2019 - Bdratings - Peercoin — An Old Tardigrade](https://www.bdratings.org/l/peercoin-an-old-tardigrade)
+* [11-MAR-2018 - Bitfalls - Peercoin Explained: The Proof of Stake Pioneer](https://bitfalls.com/2018/03/11/peercoin-explained-proof-stake-pioneer/)
 * [10-DEC-2014 - Investopedia - The 5 Most Important Virtual Currencies Other Than Bitcoin](http://www.investopedia.com/articles/investing/121014/5-most-important-virtual-currencies-other-bitcoin.asp)
 * [19-JUL-2014 - CoinReport - A Little Altcoin Sanity: Peercoin](https://coinreport.net/little-altcoin-sanity-peercoin/)
 * [19-JAN-2014 - CoinTrader - Could Peercoin and “Proof-of-Stake” Turn Bitcoin Into The Myspace of Cryptocurrency?](http://cointrader.org/peercoin-proof-of-stake-and-bitcoin/)
