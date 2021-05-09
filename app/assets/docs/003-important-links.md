@@ -23,17 +23,11 @@
 - [Twitter](https://twitter.com/PeercoinPPC)
 - [LinkedIn](https://www.linkedin.com/company/the-peercoin-foundation/)
 
-## News
-
-- [Team Updates](https://talk.peercoin.net/c/official-updates)
-
-## Blog
+## Publications and Collections
 
 - [Medium](https://medium.com/peercoin)
-
-## Peercoin myths
-
-- [Forum](https://talk.peercoin.net/t/pillows-peercoin-myths/2518)
+- [Peercoin University](https://university.peercoin.net/)
+- [Common Myths](https://talk.peercoin.net/t/pillows-peercoin-myths/2518)
 
 ## Tools
 
@@ -54,6 +48,7 @@ Testnet
 
 ### Other
 
+- [Charts](https://www.peercoinexplorer.net/charts/)
 - [Inflation](https://www.peercoinexplorer.net/inflation/)
 - [Mempool](https://www.peercoinexplorer.net/mempool/)
 - [Energy Statistics](https://www.peercoin.site/#energytable)
