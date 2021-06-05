@@ -8,8 +8,7 @@ The Foundation was established with the simple mission of promoting and supporti
 
 ## Funding
 
-To accomplish its mission The Foundation raises funds from donations.  It is a non-profit and works within the budget set by the generosity of the Peercoin community.
-to the multi-signature address: `p92W3t7YkKfQEPDb7cG9jQ6iMh7cpKLvwK`<sup>[5.2](#footnote-5.2)</sup>
+To accomplish its mission The Foundation raises funds from donations.  It is a non-profit and works within the budget set by the generosity of the Peercoin community.<sup>[5.2](#footnote-5.2)</sup>
 
 ## Board of Directors
 
