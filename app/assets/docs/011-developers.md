@@ -264,6 +264,19 @@ Peercoin transaction format is indendical to a Bitcoin transaction format with t
 | List of outputs | list of transaction outputs | varies |
 | Locktime | block number or Unix timestamp when the transaction finalizes | 4 |
 
+
+As of Peercoin 0.11, timestamp is no longer required and transaction format is exactly the same as Bitcoin. The only exception is that `version` is now `3`.
+
+| Property | Description | Bytes |
+|----------|-------------|-------|
+| Version  | transaction version number | 4 |
+| Input-counter | number of transaction inputs | 1-9 |
+| List of inputs | list of transaction inputs | varies |
+| Output-counter | number of transaction outputs | 1-9 |
+| List of outputs | list of transaction outputs | varies |
+| Locktime | block number or Unix timestamp when the transaction finalizes | 4 |
+
+
 ## Bootstrapping
 
 ### What is it?
