@@ -7,7 +7,7 @@ If we take a look at the number one spot of the rich list, transaction c7293fc60
 
 * The transaction appeared in block 376161 at timestamp 1531750952 (Unix time).
 * The transaction in the block has an offset of 383 bytes. It is the third transaction in the block. The size of the first two transactions in the block are respectively 78 and 224 bytes.
-* The transaction timestamp is 1531750624.
+* The transaction timestamp is 1531750624. (As of Peercoin 0.11, the block timestamp is to be used instead of the transaction timestamp)
 * The second recipient (index 1) received 1786301.06651300 Peercoins which, at the moment, is still unspent.
 
 These metrics, along with two more data points serves as a basis to calculate a hash for POS minting:
