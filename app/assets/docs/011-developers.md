@@ -97,17 +97,13 @@ Make the directory where pbuilder will place the packages:
 
 ### Bootstrap the chroots
 
-Raspbian (stretch):
-
-> sudo OS=raspbian DIST=stretch ARCH=armhf pbuilder --create
-
 Raspbian (buster):
 
 > sudo OS=raspbian DIST=buster ARCH=armhf pbuilder --create
 
 Debian stable:
 
-> sudo OS=debian DIST=stretch ARCH=amd64 pbuilder --create
+> sudo OS=debian DIST=buster ARCH=amd64 pbuilder --create
 
 ### Preparing for build
 
@@ -115,11 +111,11 @@ Debian stable:
 
 Download the latest .tar.gz from github.com/peercoin.
 
-> wget https://github.com/peercoin/peercoin/archive/v0.6.3ppc.rc1.tar.gz
+> wget https://github.com/peercoin/peercoin/releases/download/v0.11.0ppc/peercoin-0.11.0.tar.gz
 
 Debian build system is very strict about names, so we need to rename this to:
 
-`peercoin_0.6.3.orig.tar.gz`
+`peercoin_0.11.0.orig.tar.gz`
 
 Extract the contests of the file using `tar xf` and `cd` to it.
 
