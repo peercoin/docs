@@ -55,3 +55,22 @@ where:
 * [RFC-0015](https://github.com/peercoin/rfcs/blob/master/text/0015-time-drift/0015-time-drift.md): Reduce Time Drift
 * allow staking=0 command to disable minting (nominting=0 also works)
 * ability to filter out mint transactions in the QT wallet
+
+## v0.10
+
+> released: 10.05.2021
+
+> type: softfork
+
+Rebased to latest Bitcoin-core codebase.
+
+
+## v0.11
+
+> released: 02.10.2021
+
+> type: hardfork
+
+* [RFC-0014](https://github.com/peercoin/rfcs/blob/master/text/0014-transaction-timestamp/0014-transaction-timestamp.md): Remove Transaction Timestamp
+* [RFC-0022](https://github.com/peercoin/rfcs/blob/master/text/0022-pow-reward-cap/0022-pow-reward-cap.md): Proof-of-Work reward cap
+* make splitting coins during minting optional
