@@ -26,12 +26,14 @@ It's incredibly expensive to construct and organize the attack.
 
 > Checkpoints system is probably the most criticized design choice of Peercoin, frequently used to undermine the project.
 
+> Common myth is that Peercoin concesus is not safe without the centralized checkpoints, but that is absolutely not true.
+
 As of version 0.2, centrally-broadcasted checkpointing is no longer a critical part of the protocol.
 It's purpose is to defend the network during the initial growth period, and to help ensure a smooth upgrade path, however it was largely kept because of inertia and low interest for the Peercoin blockchain in period between early 2015 and late 2016. The checkpoints exist solely as a security measure: if something terrible were to happen, we have the checkpoints as a backup.
 
 As of version 0.6 the official client allows for opting-out of the checkpoints entirely, while checkpoint system itself will likely be obsoleted and removed after the process of re-basing Peercoin against modern Bitcoin-core codebase is complete.
 
-Common myth is that Peercoin concesus is not safe without the centralized checkpoints, but that is absolutely not true.
+As of version 0.10 support for checkpoints has been from official Peercoin client.
 
 ## Footnotes
 
