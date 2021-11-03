@@ -12,7 +12,7 @@ To accomplish its mission The Foundation raises funds from donations to the mult
 
 ## Board of Directors
 
-The Foundation is controlled by a Board of Directors. The membership is not known at this time.
+The Foundation is controlled by a Board of Directors.
 
 ## Footnotes
 
