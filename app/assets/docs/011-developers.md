@@ -273,6 +273,89 @@ As of Peercoin 0.11, timestamp is no longer required and transaction format is e
 | Locktime | block number or Unix timestamp when the transaction finalizes | 4 |
 
 
+## Creating transaction
+
+In this simple example it it will be demonstrated how to use popular bitcore library to create a Peercoin transaction.
+Example will be using node.js and javascript. Similar libaries can be found for practically all other programming languages though.
+Using bitcore is possible because Peercoin is based of Bitcoin and the two share more than 99% of the code.
+
+```
+const bitcore = require('bitcore-lib');
+
+//
+// Add peercoin network params
+//
+
+bitcore.Networks.add({
+    name: 'peercoin',
+    alias: 'ppcoin',
+    pubkeyhash: 0x37,
+    privatekey: 0xb7,
+    scripthash: 0x75,
+    xpubkey: 0x0488b21e,
+    xprivkey: 0x0488ade4,
+  });
+
+bitcore.Networks.add({
+    name: 'peercoin-testnet',
+    alias: 'ppcoin-test',
+    pubkeyhash: 0x6f,
+    privatekey: 0xef,
+    scripthash: 0xc4,
+    xpubkey: 0x043587cf,
+    xprivkey: 0x04358394,
+  });
+
+
+// set peercoin-testnet as default network
+bitcore.Networks.defaultNetwork = bitcore.Networks.get('peercoin-testnet');
+
+//
+// Generate privkey and address
+//
+
+// Our private key and address
+const value = Buffer.from('battery powered horse!'); // we are making the private from this random string
+const hash = bitcore.crypto.Hash.sha256(value);
+const bn = bitcore.crypto.BN.fromBuffer(hash);
+const privateKey = new bitcore.PrivateKey(bn);
+const myAddress = privateKey.toAddress();
+
+console.log("This is my address: ", myAddress.toString()); // this is the address which will be spending coins, so you need testnet peercoins sent here. Use faucet: https://peercoinexplorer.net/faucet/
+
+//
+// Assemble, sign and send a transaction
+//
+
+// Find appopriate utxo manually using a blockexplorer, this is just an example
+const utxo = {
+  "txId" : "2643f9721cee24c489b58a123e86619dc08e044dbaeb19a58443a4c866c5bf8d",
+  "outputIndex" : 0,
+  "address" : "mwEPhfYCrr57qVDxwpz6KgEyA6nHhW7rZD",
+  "script" : "76a914ac602663d8b249ccfa8e5299e3865ddd415d46e788ac",
+  "satoshis" : 50000
+};
+
+var rec = "mwudtnoRS13KasEYv8Pthf7Qu4G1eLHgnZ"; // random reciever, replace with one you like
+
+const transaction = new bitcore.Transaction()
+    // Expects an array of utxos 
+    .from(utxo)
+    .feePerKb(10000) // data on Peercoin costs 0.01 PPC / kB
+    .to(reciever, 1) // sending 1 tPPC to reciever
+    .addData("my test transaction!") // Add transaction metadata
+    .change(myAddress) // change
+    .sign(privateKey);
+
+// Overriding txn version to 3, because that's what it needs to be to work with peercoin
+transaction.version = 3;
+
+console.log(txHex);
+
+You can send this hex using local testnet node or via remote API which allows for "sendrawtransction" command.
+
+```
+
 ## Bootstrapping
 
 ### What is it?
