@@ -11,13 +11,13 @@ Another benefit of Peercoin's Proof-of-Stake mechanism is its monetary cost of a
 
 ## Distribution
 
-Peercoin is continually distributed via PoW block rewards. At the time of writing there is 24,828,480.19 PPC issued with annual inflation of 2.3%.
+Peercoin is continually distributed via PoW block rewards. At the time of writing there is 27,264,390 PPC issued with annual inflation of 2.37%.
 The `MAX_MONEY` variable in the Peercoin source code is nothing but a placeholder.
 There is no final number of Peercoins issued, while inflation is steadily diverging toward fixed 1%.
 Peercoin PoW block reward is product of network Proof-of-Work hashrate: the higher the network hashrate, the lower the block reward.
 This mechanism is effectively "pegging" the issuance of Peercoins to the development of SHA256 ASIC miners. Reasoning behind this decision is that it's expected that development of SHA256 miners represents the level of advancement of general cryptocurrency scene, at least that is something that is visible to the blockchain and can be encoded into an algorithm.
 
-Proof-of-Work reward formula is:  `difficulty == (9999 / (mint per block)) ** 4`
+Proof-of-Work reward formula is: `block_subsidy = 9999 / difficulty ^ (1/4)`
 
 Proof-of-Work coin mint rate is a function of difficulty, for every 16x in difficulty mint rate is halved.
 
