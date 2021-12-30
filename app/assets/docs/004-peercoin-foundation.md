@@ -12,7 +12,7 @@ To accomplish its mission The Foundation raises funds from donations.  It is a n
 
 ## Board of Directors
 
-The Foundation is controlled by a Board of Directors that prefers to remain private.
+The Foundation is controlled by a Board of Directors.
 
 ## Footnotes
 
