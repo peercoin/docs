@@ -2,19 +2,18 @@
 
 > PeerAssets offers the framework that enables communities and organizations to issue and transact with blockchain assets.
 
-PeerAssets is a Peercoin in-house developed blockchain token protocol. At the time of writing PeerAssets is tailored to work with the Peercoin blockchain, however there are plans to port the technology to other blockchains like Bitcoin and allow for cross-chain compatibility. PeerAssets is as minimalist as possible, seeking to find the most efficient and affordable method for a blockchain to support tokenization.
+PeerAssets is a blockchain token protocol invented in 2016 by `peerchemist` as a minimalist method to efficiently support tokenization.  PeerAssets is tailored to work with the Peercoin blockchain, however its design is general and can be ported to other blockchains like Bitcoin with cross-chain compatibility.
 PeerAssets transactions are standard Peercoin transactions, relayed by the standard nodes and processed by miners as any other transaction. Unlike many similar protocols ([Omni](http://www.omnilayer.org/), [CounterParty](http://counterparty.io/)), PeerAssets does not use so called "auxilary" tokens (Omni and XCP respectively), it only uses blockchain's native currency which is used to pay transaction fees. PeerAssets protocol does not require hard nor soft fork of the host network, but it requires development of a PeerAssets aware client. PeerAssets is also inspired by the original idea of "Colored Coins" and uses OP_RETURN to write data on the blockchain, but offers some optimizations to reduce amount of data written in the OP_RETURN and reducing blockchain bloat.
 PeerAssets enables easy querying of the blockchain for relevant transactions via the use P2TH, which allows development of very light clients and does not mandate the use of resource intense blockchain-parsing nodes which are common with competing protocols.
 
-PeerAsset protocol based assets can be utilized to represent any type of asset like bonds or equity. PeerAssets can also represent real life objects, and by doing so confirm their existence on the blockchain.
+PeerAsset tokens can be utilized to represent any type of asset like bonds or equity. PeerAssets can also represent real life objects in the form of non-fungible tokens, and allow for authentification via the blockchain.  The possibilities are wide enough to encompass most use cases for tokenization, without sacrificing the efficiency of the design.
 
-PeerAssets was invented in 2016, and the whitepaper was released in April, 2016 by `peerchemist`.
 
 ### Nomenclature
 
-PeerAssets uses a somewhat different phrasing to describe the protocol and it's interactions. In PeerAssets terminology assets are named “decks” and each transaction on the deck is called a “card”. Decks and cards are types of transactions parsed by the PeerAsset client to understand the bigger picture and calculate the cards balances and thus the state of the deck.
+PeerAssets uses a friendly phrasing to succinctly describe the protocol and it's interactions. In PeerAssets terminology assets are named “decks” and each transaction on the deck is called a “card”. Deck creation and card manipulation are types of transactions parsed by the PeerAsset client, which uses the known protocol rules to calculate card balances and the total state of the deck.  A deck with a single card, for example, would act as a non-fungible token.
 
-`Deck - asset`
+`Deck - named asset`
 
 `Card - individual token`
 
@@ -30,7 +29,7 @@ Creates a new token at a given Peercoin address. Asset is described by:
 * how divisible the token is (number of decimals),
 * the deck issue mode.
 
-Deck issue modes can be understood as light smart contracts, speaking in modern crypto jargon as they allow great flexibility when defining rules of token supply.
+Deck issue modes can be understood as light smart contracts as they allow great flexibility when defining common rules of token economics such as ONCE, MULTI, or CUSTOM.
 
 * **Card issue transaction**
 
@@ -64,13 +63,9 @@ PeerAssets API provider, implemented using pypeerassets.
 
 github: https://github.com/PeerAssets/papi
 
-deployed: https://papi.peercoin.net/api/v1/decks
-
 ## Wallets
 
 ### chizukeki
-
-(work in progress)
 
 A light, cross-platform Peercoin wallet with baked-in support for the PeerAssets.
 
@@ -83,7 +78,7 @@ deployed: https://peerassets.github.io/chizukeki/
 The PeerAssets project has adopted [RFC](https://en.wikipedia.org/wiki/Request_for_Comments) schema of sharing new ideas and establishing standards like the Peercoin project.
 RFC's are submitted on the PeerAssets [github repo](https://github.com/PeerAssets/peerassets-rfcs) and peer-reviewed, after which code experimentation and final implementation proceeds.
 
-There is a number of interesting RFC which are currently discussed, such as:
+Some RFCs that show the wide array of possible applications for PeerAssets includes:
 
 [PeerAssets Alias/Proof-of-identity protocol specification](https://github.com/PeerAssets/peerassets-rfcs/blob/master/0003-peerassets-alias-poid-protocol-specification.md)
 
