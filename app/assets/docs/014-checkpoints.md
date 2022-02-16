@@ -2,6 +2,8 @@
 
 Checkpoints are chosen block heights for which the checksum is saved the Peercoin client. With the help of checkpoints, your client is able to identify if it has downloaded the correct blockchain or if an attacker attempts to provide it with a chain featuring "fake history".
 
+> As of version 0.10 support for centrally-broadcasted checkpoints has been removed from official the Peercoin client.
+
 ## Deep chain reorganizations
 
 > If a single miner has more resources than the entirety of the rest of the network, this miner could pick an arbitrary previous block from which to extend an alternative block history, eventually outpacing the block history produced by the rest of the network and defining a new canonical transaction history.
@@ -33,7 +35,7 @@ It's purpose is to defend the network during the initial growth period, and to h
 
 As of version 0.6 the official client allows for opting-out of the checkpoints entirely, while checkpoint system itself will likely be obsoleted and removed after the process of re-basing Peercoin against modern Bitcoin-core codebase is complete.
 
-As of version 0.10 support for checkpoints has been from official Peercoin client.
+> As of version 0.10 support for centrally-broadcasted checkpoints has been removed from the official Peercoin client.
 
 ## Footnotes
 
