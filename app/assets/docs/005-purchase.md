@@ -39,15 +39,6 @@ CoinBase is one of the most popular broker sites and is arguably the most common
 https://gemini.com
 Gemini also offers fiat purchasing options for Bitcoin with bank wire options.
 
-#### OkCoin
-
-https://www.okcoin.com/lang/en-US/
-Offers fiat deposits by wire to buy Bitcoin and other common coins.
-
-It is strongly recommended to purchase Bitcoin as it has the most traded pairs for the exchanges that list Peercoin which will be discussed in the section below.  Once you have made a purchase, send those coins over to your chosen exchange and make your purchase of Peercoin.
-
-There are other websites that can be used to buy Bitcoin with a debit or credit card, and there are a plethora of guides available on these sites.  We suggest you find a reputable site with low fees and a large number of positive user reviews over time.
-
 ## Exchanges
 
 If you already own cryptocurrency, the section about fiat gateways can be skipped since you most likely already have one.  Below is a list of exchanges which support Peercoin and where it can be traded actively.  Send your coins there and you will be able to purchase Peercoin.
