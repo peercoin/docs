@@ -275,9 +275,11 @@ As of Peercoin 0.11, timestamp is no longer required and transaction format is e
 
 ## Creating transaction
 
-In this simple example it it will be demonstrated how to use popular bitcore library to create a Peercoin transaction.
+In this simple example it it will be demonstrated how to use popular [bitcore](https://github.com/bitpay/bitcore/tree/master/packages/bitcore-lib) library to create a Peercoin transaction.
 Example will be using node.js and javascript. Similar libaries can be found for practically all other programming languages though.
 Using bitcore is possible because Peercoin is based of Bitcoin and the two share more than 99% of the code.
+
+You can find more elaborate examples here: https://github.com/peercoin/bitcore-lib-peercoin
 
 ```
 const bitcore = require('bitcore-lib');
@@ -287,24 +289,36 @@ const bitcore = require('bitcore-lib');
 //
 
 bitcore.Networks.add({
-    name: 'peercoin',
-    alias: 'ppcoin',
-    pubkeyhash: 0x37,
-    privatekey: 0xb7,
-    scripthash: 0x75,
-    xpubkey: 0x0488b21e,
-    xprivkey: 0x0488ade4,
-  });
+  name: 'peercoin',
+  alias: 'ppcoin',
+  pubkeyhash: 0x37,
+  privatekey: 0xb7,
+  scripthash: 0x75,
+  bech32prefix: 'pc',
+  xpubkey: 0x0488b21e,
+  xprivkey: 0x0488ade4,
+  networkMagic: 0xe6e8e9e5,
+  port: 9901,
+  dnsSeeds: [
+    'seed.peercoin.net'
+  ]
+});
 
 bitcore.Networks.add({
-    name: 'peercoin-testnet',
-    alias: 'ppcoin-test',
-    pubkeyhash: 0x6f,
-    privatekey: 0xef,
-    scripthash: 0xc4,
-    xpubkey: 0x043587cf,
-    xprivkey: 0x04358394,
-  });
+  name: 'peercoin-testnet',
+  alias: 'ppcoin-testnet',
+  pubkeyhash: 0x6f,
+  privatekey: 0xef,
+  scripthash: 0xc4,
+  bech32prefix: 'tpc',
+  xpubkey: 0x043587cf,
+  xprivkey: 0x04358394,
+  networkMagic: 0xcbf2c0ef,
+  port: 9903,
+  dnsSeeds: [
+    'tseed.peercoin.net'
+  ]
+});
 
 
 // set peercoin-testnet as default network
