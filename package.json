@@ -26,13 +26,13 @@
     "babel-brunch": "^6.1.1",
     "babel-preset-latest": "^6.24.1",
     "brunch": "^2.9.0",
-    "clean-css-brunch": "^2",
+    "clean-css-brunch": "^3.0.0",
     "closure-compiler-brunch": "^0.1.4",
-    "cssnano-brunch": "^1.1.8",
+    "cssnano-brunch": "^1.2.1",
     "gh-pages": "^1.0.0",
-    "postcss-brunch": "^2.0.5",
+    "postcss-brunch": "^3.0.0",
     "rimraf": "^2.6.1",
-    "sass-brunch": "^2.10.4",
+    "sass-brunch": "^3.0.1",
     "svelte-brunch": "^0.1.0"
   }
 }
