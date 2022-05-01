@@ -7,8 +7,7 @@
   "scripts": {
     "start": "brunch watch --server -n",
     "build": "echo 'Generating production optimized code, this may take a while...\n' && brunch build --production && echo 'You can find your production files at /public folder.\n\n'",
-    "build:docs": "node task-build-docs.js",
-    "deploy": "npm run build && npm run build:docs && cp CNAME public && node task-deploy.js"
+    "build:docs": "node task-build-docs.js"
   },
   "dependencies": {
     "@fdaciuk/ajax": "^2.1.5",
@@ -29,7 +28,6 @@
     "clean-css-brunch": "^3.0.0",
     "closure-compiler-brunch": "^0.1.4",
     "cssnano-brunch": "^1.2.1",
-    "gh-pages": "^1.0.0",
     "postcss-brunch": "^3.0.0",
     "rimraf": "^2.6.1",
     "sass-brunch": "^3.0.1",

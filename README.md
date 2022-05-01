@@ -1,11 +1,6 @@
 # Peercoin official documentation repository
 
 ----
-
-## How to contribute:
-
-There are two ways to contribute to Peercoin Docs: Directly via Github website, or by running it locally. Follow the guide that better fits your needs (and knowledge).
-
 #### Directly via Github:
 
 1. Edit any of the [docs files](https://github.com/peercoin/docs/tree/master/app/assets/docs);
@@ -25,8 +20,3 @@ Any changes in the project (both on docs and/or code) will be reflect automatica
 #### Deploying a public test version:
 
 1. In your local project, run: `npm run deploy`.
-2. Access your changes at: https://peercoin.github.io/docs/
-
-**Note: peercoin.github.io/docs/ is a test version of the docs, and thus shouldn't be shared openly as the production documentation website.**
-
-####
