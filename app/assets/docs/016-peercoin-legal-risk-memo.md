@@ -7,7 +7,7 @@ The Peercoin Foundation has hired U.S. based attorney at law to estimate the pos
 ## Summary
 
 In brief, Peercoin, though an innovation, is at very low risk of being classified as a security. Peercoin is one of the original cryptocurrencies, there was never an
-[initial coin offering](https://www.investopedia.com/terms/i/initial-coin-offering-ico.asp), [premine](https://www.investopedia.com/terms/p/premining.asp) or sale of coins and there is/was no central authority or issuer. It is a decentralized p2p network based on a hybrid proof of work and proof of stake algorithm. There is a very low risk the Securities Exchange Commission (“SEC”), or another regulatory agency or plaintiff would recharacterize Peercoin as a security.
+[initial coin offering](https://www.investopedia.com/terms/i/initial-coin-offering-ico.asp), [premine](https://www.investopedia.com/terms/p/premining.asp) or sale of coins and there is/was no central authority or issuer. It is a decentralized p2p network based on a hybrid proof of work and Proof-of-Stake algorithm. There is a very low risk the Securities Exchange Commission (“SEC”), or another regulatory agency or plaintiff would recharacterize Peercoin as a security.
 
 ## Securities Analysis of Peercoin
 
